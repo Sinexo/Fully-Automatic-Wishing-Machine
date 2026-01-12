@@ -61,6 +61,7 @@ def get_player(user_id):
             "sequence": 9,
             "acting_name": "Civilian",
             "xp": 0,
+            "max_xp": 100,
             "sanity": 100,
             "inventory": [],
             "last_daily": None,
@@ -177,6 +178,14 @@ async def profile(ctx, member: discord.Member = None):
     seq_val = f"{player['acting_name']} (S{player['sequence']})" if player["pathway"] else "Civilian"
     embed.add_field(name="📜 Sequence", value=seq_val, inline=True)
     embed.add_field(name="💰 Wealth", value=format_currency(player['balance']), inline=False)
+    
+    # Acting bar
+    acting_progress = player.get("xp", 0)
+    max_xp = player.get("max_xp", 100)
+    percent = min(100, int((acting_progress / max_xp) * 100))
+    acting_bar = "🟢" * (percent // 10) + "⚪" * (10 - (percent // 10))
+    embed.add_field(name="🎭 Acting Progress", value=f"{acting_bar} ({percent}%)", inline=False)
+
     sanity_bar = "🟦" * (player["sanity"] // 10) + "⬜" * (10 - (player["sanity"] // 10))
     embed.add_field(name="🧠 Sanity", value=f"{sanity_bar} ({player['sanity']}%)", inline=False)
     embed.add_field(name="🎒 Inventory", value=f"{len(player['inventory'])} items. Use `!inv`", inline=True)
@@ -250,9 +259,16 @@ async def daily(ctx):
     can_run, rem = check_cooldown(player, "last_daily", 24)
     if not can_run: return await ctx.send("⏳ Wait.")
     player["balance"] += 120
+    player["xp"] = min(player["max_xp"], player.get("xp", 0) + 20)
+    
+    # Random item
+    item_id = random.choice(list(items_db.keys()))
+    player["inventory"].append(item_id)
+    item_name = items_db[item_id]["name"]
+    
     player["last_daily"] = datetime.now().isoformat()
     save_json(DB_FILE, player_data)
-    await ctx.send(f"🎁 +10 Soli!")
+    await ctx.send(f"🎁 **Daily Rewards Claimed!**\n💰 +10 Soli\n🎭 +20 XP\n🎒 Found: **{item_name}**")
 
 @bot.command(name="balance")
 async def balance(ctx):
@@ -301,21 +317,24 @@ async def expedition(ctx):
     if not player["pathway"]: return await ctx.send("⚠️ Choose a pathway first.")
     
     player["last_expedition"] = datetime.now().isoformat()
-    if random.random() > 0.4:
+    if random.random() > 0.3: # 70% success rate
         reward = random.randint(120, 480)
+        xp_gain = random.randint(10, 25)
         player["balance"] += reward
+        player["xp"] = min(player.get("max_xp", 100), player.get("xp", 0) + xp_gain)
         player["sanity"] = max(0, player["sanity"] - random.randint(5, 12))
-        msg = f"Found {format_currency(reward)}."
-        if random.random() < 0.4:
-            item_id = random.choice(list(items_db.keys()))
-            player["inventory"].append(item_id)
-            msg += f" Found: {items_db[item_id]['name']}."
+        
+        # Always give an item
+        item_id = random.choice(list(items_db.keys()))
+        player["inventory"].append(item_id)
+        item_name = items_db[item_id]["name"]
+        
         save_json(DB_FILE, player_data)
-        await ctx.send(f"🕵️ {msg}")
+        await ctx.send(f"🕵️ **Expedition Success!**\n💰 Found {format_currency(reward)}.\n🎭 +{xp_gain} XP\n🎒 Loot: **{item_name}**")
     else:
         player["sanity"] = max(0, player["sanity"] - 20)
         save_json(DB_FILE, player_data)
-        await ctx.send("💀 A terrifying encounter.")
+        await ctx.send("💀 **A terrifying encounter.** You fled with barely your life, finding nothing.")
 
 if __name__ == "__main__":
     bot.run(TOKEN)
