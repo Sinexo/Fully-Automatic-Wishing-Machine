@@ -1,0 +1,34 @@
+{
+    "potions": {
+        "clown_potion": {
+            "name": "Clown Potion (Sequence 8)",
+            "ingredients": {
+                "human_faced_rose": 1,
+                "murloc_bladder": 1
+            },
+            "result_type": "advancement",
+            "target_sequence": 8,
+            "description": "A potion that grants agility, balance, and control over facial expressions."
+        },
+        "calming_draught": {
+            "name": "Calming Draught",
+            "ingredients": {
+                "human_faced_rose": 1
+            },
+            "result_type": "consumable",
+            "effect": "calm",
+            "description": "A simple mystical brew that restores 15% Sanity."
+        }
+    },
+    "artifacts": {
+        "spirit_pouch": {
+            "name": "Spirit Pouch",
+            "ingredients": {
+                "wraith_dust": 2,
+                "lava_dragon_blood": 1
+            },
+            "description": "An artifact that stabilizes spiritual energy and hidden treasures.",
+            "effect": "insight"
+        }
+    }
+}

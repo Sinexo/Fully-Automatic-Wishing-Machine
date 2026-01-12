@@ -1,0 +1,21 @@
+{
+    "name": "Demoness",
+    "sequences": {
+        "9": {
+            "name": "Assassin",
+            "formula": {
+                "main": [
+                    "Main Ingredient 1",
+                    "Main Ingredient 2"
+                ],
+                "supplementary": [
+                    "Pure Water"
+                ]
+            },
+            "abilities": [
+                "Basic Ability 1",
+                "Basic Ability 2"
+            ]
+        }
+    }
+}

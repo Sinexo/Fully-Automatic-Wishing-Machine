@@ -1,0 +1,202 @@
+{
+    "name": "Fool",
+    "sequences": {
+        "9": {
+            "name": "Seer",
+            "formula": {
+                "main": [
+                    "Lavos Squid Blood (50ml)",
+                    "Stellar Crystal (10g)"
+                ],
+                "supplementary": [
+                    "Pure Water (100ml)",
+                    "Saffron Leaves (5g)",
+                    "Golden Mint (3 drops)"
+                ]
+            },
+            "abilities": [
+                "Spirit Vision",
+                "Divination",
+                "Danger Intuition",
+                "Enhanced Memory",
+                "Astrology"
+            ]
+        },
+        "8": {
+            "name": "Clown",
+            "formula": {
+                "main": [
+                    "Human-faced Rose",
+                    "Murloc Bladder"
+                ],
+                "supplementary": [
+                    "Mist Lizard Blood (80ml)",
+                    "Pure Water (100ml)",
+                    "Crystallized Spirit (5g)"
+                ]
+            },
+            "abilities": [
+                "Master of Balance",
+                "Paper Throwing",
+                "Facial Expression Control",
+                "Danger Intuition Boost",
+                "Extreme Agility"
+            ]
+        },
+        "7": {
+            "name": "Magician",
+            "formula": {
+                "main": [
+                    "Fire Raven Feather",
+                    "Lava-dragon Blood (50ml)"
+                ],
+                "supplementary": [
+                    "Pure Water (100ml)",
+                    "Charcoal Dust (10g)",
+                    "Spirit Herb (5g)"
+                ]
+            },
+            "abilities": [
+                "Air Bullet",
+                "Flaming Jump",
+                "Paper Figurine Substitute",
+                "Damage Transfer",
+                "Illusion Creation",
+                "Underwater Breathing"
+            ]
+        },
+        "6": {
+            "name": "Faceless",
+            "formula": {
+                "main": [
+                    "Mutated Human Face Rose",
+                    "Shadow Skin"
+                ],
+                "supplementary": [
+                    "Pure Water",
+                    "Crystallized Spirit"
+                ]
+            },
+            "abilities": [
+                "Shapeshifting",
+                "Acting Skills",
+                "Identity Concealment",
+                "Voice Mimicry"
+            ]
+        },
+        "5": {
+            "name": "Marionettist",
+            "formula": {
+                "main": [
+                    "Ancient Wraith's Dust",
+                    "Spirit World Plunderer's Eye"
+                ],
+                "supplementary": [
+                    "Pure Water",
+                    "Black Blood"
+                ]
+            },
+            "abilities": [
+                "Spirit Body Threads Manipulation",
+                "Puppet Control",
+                "Shared Senses",
+                "Thread Stealth"
+            ]
+        },
+        "4": {
+            "name": "Bizarro Sorcerer",
+            "formula": {
+                "main": [
+                    "Worm of Spirit",
+                    "True Soul of a Spirit World Plunderer"
+                ],
+                "supplementary": [
+                    "Pure Water",
+                    "Mist Lizard Blood"
+                ]
+            },
+            "abilities": [
+                "Concealment",
+                "Marionette Interchange",
+                "Air Cannon",
+                "Worm of Spirit Extraction",
+                "Mythical Creature Form (Partial)"
+            ]
+        },
+        "3": {
+            "name": "Scholar of Yore",
+            "formula": {
+                "main": [
+                    "Historical Void Heart",
+                    "Worm of Spirit (Advanced)"
+                ],
+                "supplementary": [
+                    "Historical Papers",
+                    "Pure Water"
+                ]
+            },
+            "abilities": [
+                "Historical Projection Summoning",
+                "Historical Void Hiding",
+                "Past Summoning"
+            ]
+        },
+        "2": {
+            "name": "Miracle Invoker",
+            "formula": {
+                "main": [
+                    "Dark Demonic Wolf's Blood",
+                    "Miracle Essence"
+                ],
+                "supplementary": [
+                    "Wish Paper",
+                    "Pure Water"
+                ]
+            },
+            "abilities": [
+                "Granting Wishes",
+                "Resurrection (4 times)",
+                "Fate Jamming",
+                "Worm of Spirit Vortex"
+            ]
+        },
+        "1": {
+            "name": "Attendant of Mysteries",
+            "formula": {
+                "main": [
+                    "Vortex of Worms",
+                    "Curtain of Shadows"
+                ],
+                "supplementary": [
+                    "Mystery Powder",
+                    "Pure Water"
+                ]
+            },
+            "abilities": [
+                "Divine Kingdom Creation",
+                "Space-Time Distortion",
+                "Mass Marionette Control"
+            ]
+        },
+        "0": {
+            "name": "Fool",
+            "formula": {
+                "main": [
+                    "Uniqueness of the Fool",
+                    "Sequence 1 Characteristics (3)"
+                ],
+                "supplementary": [
+                    "Fate Loop",
+                    "Historical Distortion"
+                ]
+            },
+            "abilities": [
+                "Divine Authority",
+                "Omnipresence",
+                "Miracle Mastery",
+                "Grafting",
+                "Fooling Reality"
+            ]
+        }
+    }
+}

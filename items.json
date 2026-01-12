@@ -1,0 +1,34 @@
+{
+    "human_faced_rose": {
+        "name": "Human-faced Rose",
+        "image": "human_faced_rose.png",
+        "description": "A unique blue rose with red veins running across its petals, creating the illusion of a grinning human face. It emits an eerie illusion of laughter and crying intertwined.",
+        "effects": [
+            "calm"
+        ]
+    },
+    "wraith_dust": {
+        "name": "Ancient Wraith's Dust",
+        "image": "wraith_dust.png",
+        "description": "Remaining dust from an Ancient Wraith. It feels cold to the touch and seems to contain the echoes of forgotten memories.",
+        "effects": [
+            "spirit_vision"
+        ]
+    },
+    "lava_dragon_blood": {
+        "name": "Lava-dragon Blood",
+        "image": "lava_dragon_blood.png",
+        "description": "Glistening red liquid that remains hot even in freezing temperatures. Obtained from a Lava-dragon.",
+        "effects": [
+            "physical_boost"
+        ]
+    },
+    "murloc_bladder": {
+        "name": "Murloc Bladder",
+        "image": "murloc_bladder.png",
+        "description": "A slippery, translucent organ from a Murloc. It has a faint salty smell.",
+        "effects": [
+            "insight"
+        ]
+    }
+}

@@ -1,0 +1,200 @@
+{
+    "name": "Door",
+    "sequences": {
+        "9": {
+            "name": "Apprentice",
+            "formula": {
+                "main": [
+                    "Stellar Crystal",
+                    "Spirit Flesh of a Glowworm"
+                ],
+                "supplementary": [
+                    "Pure Water",
+                    "Moonlight Mint"
+                ]
+            },
+            "abilities": [
+                "Door Opening",
+                "Spirit Vision",
+                "Sleight of Hand",
+                "Obstacle Passage"
+            ]
+        },
+        "8": {
+            "name": "Trickmaster",
+            "formula": {
+                "main": [
+                    "Lizard Eye",
+                    "Foggy Stone"
+                ],
+                "supplementary": [
+                    "Pure Water",
+                    "Sparkling Dust"
+                ]
+            },
+            "abilities": [
+                "Flash",
+                "Electric Shock",
+                "Freeze",
+                "Fog Creation",
+                "Gale",
+                "Burning",
+                "Slip",
+                "Escape Trick"
+            ]
+        },
+        "7": {
+            "name": "Astrologer",
+            "formula": {
+                "main": [
+                    "Star-flecked Stone",
+                    "Eyeball of a Deep Sea Squid"
+                ],
+                "supplementary": [
+                    "Pure Water",
+                    "Astrology Oil"
+                ]
+            },
+            "abilities": [
+                "Advanced Divination",
+                "Anti-Divination",
+                "Enhanced Spirit Intuition",
+                "Multitarget Door Opening"
+            ]
+        },
+        "6": {
+            "name": "Scribe",
+            "formula": {
+                "main": [
+                    "Brain of a Mutated Mirror Beast",
+                    "Lava-dragon Blood"
+                ],
+                "supplementary": [
+                    "Pure Water",
+                    "Crystallized Spirit"
+                ]
+            },
+            "abilities": [
+                "Record Ability",
+                "Replicate Power",
+                "I Arrive, I Witness, I Record"
+            ]
+        },
+        "5": {
+            "name": "Traveler",
+            "formula": {
+                "main": [
+                    "Traveling Heart",
+                    "Dust of a Void Creeper"
+                ],
+                "supplementary": [
+                    "Spirit World Water",
+                    "Pure Water"
+                ]
+            },
+            "abilities": [
+                "Teleportation",
+                "Blink",
+                "Spirit World Traversal",
+                "Astral Wandering (Basic)"
+            ]
+        },
+        "4": {
+            "name": "Secrets Sorcerer",
+            "formula": {
+                "main": [
+                    "Secret Eater's Tongue",
+                    "Worm of Cosmos"
+                ],
+                "supplementary": [
+                    "Concealment Ink",
+                    "Pure Water"
+                ]
+            },
+            "abilities": [
+                "Space Concealment",
+                "Secrets Secret",
+                "Illusory Doors",
+                "Banishment",
+                "Blink Mastery"
+            ]
+        },
+        "3": {
+            "name": "Wanderer",
+            "formula": {
+                "main": [
+                    "Star Wanderer's Heart",
+                    "Void Core"
+                ],
+                "supplementary": [
+                    "Cosmos Essence",
+                    "Pure Water"
+                ]
+            },
+            "abilities": [
+                "Cosmic Teleportation",
+                "Space Tearing",
+                "Spatial Bending",
+                "Prayer Response"
+            ]
+        },
+        "2": {
+            "name": "Planeswalker",
+            "formula": {
+                "main": [
+                    "Planar Heart",
+                    "Essence of the Astral World"
+                ],
+                "supplementary": [
+                    "Dimensional Dust",
+                    "Pure Water"
+                ]
+            },
+            "abilities": [
+                "Multilocation",
+                "Abstract Replication",
+                "Dimensional Control",
+                "World Shifting"
+            ]
+        },
+        "1": {
+            "name": "Key of Stars",
+            "formula": {
+                "main": [
+                    "Eye of the Star Key",
+                    "Galaxy Essence"
+                ],
+                "supplementary": [
+                    "Gravity Dust",
+                    "Pure Water"
+                ]
+            },
+            "abilities": [
+                "Gravity Control",
+                "Starlight Authority",
+                "Space-Time Mazes",
+                "Universal Locating"
+            ]
+        },
+        "0": {
+            "name": "Door",
+            "formula": {
+                "main": [
+                    "Uniqueness of Door",
+                    "Sequence 1 Characteristics (3)"
+                ],
+                "supplementary": [
+                    "Seal of the Cosmos",
+                    "Wandering Soul"
+                ]
+            },
+            "abilities": [
+                "Absolute Spatial Control",
+                "World Creation",
+                "Conceptual Sealing",
+                "Nonexistence",
+                "Pathway Modification"
+            ]
+        }
+    }
+}

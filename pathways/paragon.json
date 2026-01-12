@@ -1,0 +1,43 @@
+{
+    "name": "Paragon",
+    "sequences": {
+        "9": {
+            "name": "Savant",
+            "formula": {
+                "main": [
+                    "Bronze Vine Bark",
+                    "Savant's Eyeball Root"
+                ],
+                "supplementary": [
+                    "Gold Dust",
+                    "Pure Water"
+                ]
+            },
+            "abilities": [
+                "Enhanced Logic",
+                "Item Understanding",
+                "Machine Operation",
+                "Hyper-accurate Measurement"
+            ]
+        },
+        "8": {
+            "name": "Archaeologist",
+            "formula": {
+                "main": [
+                    "Ancient Fossil Powder",
+                    "Labyrinthe Moss"
+                ],
+                "supplementary": [
+                    "Pure Water",
+                    "Tomb Dust"
+                ]
+            },
+            "abilities": [
+                "Ancient Language Expertise",
+                "Physical Resistance",
+                "Wilderness Survival",
+                "History Intuition"
+            ]
+        }
+    }
+}

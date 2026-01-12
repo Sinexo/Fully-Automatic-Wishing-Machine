@@ -1,0 +1,195 @@
+{
+    "name": "Error",
+    "sequences": {
+        "9": {
+            "name": "Marauder",
+            "formula": {
+                "main": [
+                    "Mutated Rat's Eye",
+                    "Swift Shadow Skin"
+                ],
+                "supplementary": [
+                    "Pure Water",
+                    "Agility Root"
+                ]
+            },
+            "abilities": [
+                "Physical Theft",
+                "Agile Hands",
+                "Value Sensing",
+                "Stealth"
+            ]
+        },
+        "8": {
+            "name": "Swindler",
+            "formula": {
+                "main": [
+                    "Tongue of a Mimicry Toad",
+                    "Hypnotic Stone"
+                ],
+                "supplementary": [
+                    "Pure Water",
+                    "Charisma Powder"
+                ]
+            },
+            "abilities": [
+                "Eloquence",
+                "Misdirection",
+                "Mental Disruption",
+                "Micro-expression Detection"
+            ]
+        },
+        "7": {
+            "name": "Cryptologist",
+            "formula": {
+                "main": [
+                    "Code-breaker's Brain",
+                    "Essence of a Riddler's Heart"
+                ],
+                "supplementary": [
+                    "Pure Water",
+                    "Ancient Ink"
+                ]
+            },
+            "abilities": [
+                "Decryption",
+                "Mystery Reconstruction",
+                "Illusion Detection",
+                "Deductive Reasoning"
+            ]
+        },
+        "6": {
+            "name": "Prometheus",
+            "formula": {
+                "main": [
+                    "Heart of a Fire-thief Beast",
+                    "Stealing Symbol"
+                ],
+                "supplementary": [
+                    "Pure Water",
+                    "Spirit Dust"
+                ]
+            },
+            "abilities": [
+                "Ability Theft (Sequence 5-9)",
+                "Remote Theft",
+                "Power Siphoning",
+                "Mental Pollution Theft"
+            ]
+        },
+        "5": {
+            "name": "Deceiver",
+            "formula": {
+                "main": [
+                    "Falsified Heart",
+                    "Mirror of Lies"
+                ],
+                "supplementary": [
+                    "Pure Water",
+                    "Essence of Deceit"
+                ]
+            },
+            "abilities": [
+                "Dream Infiltration",
+                "Fate Misdirection (Minor)",
+                "Total Perception Deception"
+            ]
+        },
+        "4": {
+            "name": "Parasite",
+            "formula": {
+                "main": [
+                    "Worm of Time (Immature)",
+                    "Parasitic Moss"
+                ],
+                "supplementary": [
+                    "Pure Water",
+                    "Spiritual Anchor"
+                ]
+            },
+            "abilities": [
+                "Parasitism",
+                "Collecting Worms of Time",
+                "Mental Stabilization",
+                "Host Control"
+            ]
+        },
+        "3": {
+            "name": "Trojan Horse of Destiny",
+            "formula": {
+                "main": [
+                    "Core of a Destined Error",
+                    "Heart of a Fate Thief"
+                ],
+                "supplementary": [
+                    "Rule Loopholes",
+                    "Pure Water"
+                ]
+            },
+            "abilities": [
+                "Rule Loophole Exploitation",
+                "Order Collapse",
+                "Destiny Tampering"
+            ]
+        },
+        "2": {
+            "name": "Worm of Time",
+            "formula": {
+                "main": [
+                    "Worm of Time (Main Body)",
+                    "Clockwork Essence"
+                ],
+                "supplementary": [
+                    "Timeline Dust",
+                    "Pure Water"
+                ]
+            },
+            "abilities": [
+                "Time Manipulation",
+                "Lifespan Theft",
+                "Anchor Theft",
+                "Identity Inheritance",
+                "Temporal Deception"
+            ]
+        },
+        "1": {
+            "name": "Worm of Time (King of Angels)",
+            "formula": {
+                "main": [
+                    "Complete Worm of Time Characteristic",
+                    "Sequence 1 Characteristics"
+                ],
+                "supplementary": [
+                    "Temporal Chaos",
+                    "Pure Water"
+                ]
+            },
+            "abilities": [
+                "Advanced Time Theft",
+                "Time Reversal",
+                "Massive Ancor Theft",
+                "Temporal Teleportation"
+            ]
+        },
+        "0": {
+            "name": "Error",
+            "formula": {
+                "main": [
+                    "Uniqueness of Error",
+                    "Sequence 1 Characteristics (3)"
+                ],
+                "supplementary": [
+                    "Universal Loophole",
+                    "Theft of Destiny"
+                ]
+            },
+            "abilities": [
+                "Absolute Deception",
+                "Universal Theft",
+                "Reality Manipulation",
+                "Avatar Creation",
+                "Conceptual Error Fixing"
+            ]
+        }
+    }
+}

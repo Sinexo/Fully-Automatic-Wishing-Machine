@@ -1,0 +1,21 @@
+{
+    "name": "Hermit",
+    "sequences": {
+        "9": {
+            "name": "Mystery Pryer",
+            "formula": {
+                "main": [
+                    "Main Ingredient 1",
+                    "Main Ingredient 2"
+                ],
+                "supplementary": [
+                    "Pure Water"
+                ]
+            },
+            "abilities": [
+                "Basic Ability 1",
+                "Basic Ability 2"
+            ]
+        }
+    }
+}

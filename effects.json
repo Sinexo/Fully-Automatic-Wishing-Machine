@@ -1,0 +1,18 @@
+{
+    "calm": {
+        "name": "Calming",
+        "description": "Reduces sanity loss by 10% during expeditions."
+    },
+    "insight": {
+        "name": "Insight",
+        "description": "Increases the chance of finding rare items by 5%."
+    },
+    "spirit_vision": {
+        "name": "Spirit Vision",
+        "description": "Allows the user to see hidden details in mystical reports."
+    },
+    "physical_boost": {
+        "name": "Physical Boost",
+        "description": "Increases work efficiency, yielding 20% more pence."
+    }
+}
