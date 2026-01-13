@@ -102,6 +102,16 @@ def check_cooldown(player, command_key, hours):
     if delta >= timedelta(hours=hours): return True, 0
     return False, timedelta(hours=hours) - delta
 
+def format_timedelta(td):
+    total_seconds = int(td.total_seconds())
+    hours, remainder = divmod(total_seconds, 3600)
+    minutes, seconds = divmod(remainder, 60)
+    parts = []
+    if hours > 0: parts.append(f"{hours}h")
+    if minutes > 0: parts.append(f"{minutes}m")
+    if seconds > 0 or not parts: parts.append(f"{seconds}s")
+    return " ".join(parts)
+
 # --- Crafting Helper ---
 def craft_item(player, recipe_category, recipe_id):
     recipe = recipes_db.get(recipe_category, {}).get(recipe_id)
@@ -246,7 +256,7 @@ async def show_recipes(ctx):
 async def work(ctx):
     player = get_player(ctx.author.id)
     can_run, rem = check_cooldown(player, "last_work", 1)
-    if not can_run: return await ctx.send(f"⏳ Wait {rem.seconds//60}m.")
+    if not can_run: return await ctx.send(f"⏳ **Cooldown:** Wait **{format_timedelta(rem)}**.")
     reward = random.randint(10, 20)
     player["balance"] += reward
     player["last_work"] = datetime.now().isoformat()
@@ -257,7 +267,7 @@ async def work(ctx):
 async def daily(ctx):
     player = get_player(ctx.author.id)
     can_run, rem = check_cooldown(player, "last_daily", 24)
-    if not can_run: return await ctx.send("⏳ Wait.")
+    if not can_run: return await ctx.send(f"⏳ **Cooldown:** Wait **{format_timedelta(rem)}**.")
     player["balance"] += 120
     player["xp"] = min(player["max_xp"], player.get("xp", 0) + 20)
     
@@ -313,7 +323,7 @@ async def will_stats(ctx):
 async def expedition(ctx):
     player = get_player(ctx.author.id)
     can_run, rem = check_cooldown(player, "last_expedition", 3)
-    if not can_run: return await ctx.send("⏳ Resting.")
+    if not can_run: return await ctx.send(f"⏳ **Cooldown:** Wait **{format_timedelta(rem)}**.")
     if not player["pathway"]: return await ctx.send("⚠️ Choose a pathway first.")
     
     player["last_expedition"] = datetime.now().isoformat()
