@@ -17,6 +17,16 @@ PATHWAYS_DIR = "pathways"
 
 # Stat config
 COC_STATS = ["STR", "CON", "SIZ", "DEX", "APP", "INT", "POW", "EDU"]
+STAT_NAMES = {
+    "STR": "Strength",
+    "CON": "Constitution",
+    "SIZ": "Size",
+    "DEX": "Dexterity",
+    "APP": "Appearance",
+    "INT": "Intelligence",
+    "POW": "Power",
+    "EDU": "Education"
+}
 
 PATHWAY_STATS = {
     "Fool": {"INT": 3, "POW": 2},
@@ -91,7 +101,7 @@ def get_player(user_id):
             "ascension_xp": 0,
             "ascension_max_xp": 100,
             "acting_xp": 0,
-            "acting_max_xp": 100,
+            "acting_max_xp": 200,
             "sanity": 100,
             "inventory": [],
             "last_daily": None,
@@ -183,7 +193,7 @@ async def on_ready():
 @bot.command(name="help")
 async def custom_help(ctx):
     embed = discord.Embed(title="📖 Beyonder's Handbook (Help)", color=0x34495E)
-    embed.add_field(name="🧬 Progression", value="`!pathways`, `!choose [name]`, `!profile`, `!abilities`, `!act`, `!advance`, `!stat [name]` (New!)", inline=False)
+    embed.add_field(name="🧬 Progression", value="`!pathways`, `!choose [name]`, `!profile`, `!abilities`, `!act`, `!advance`, `!stats [name]` (New!)", inline=False)
     embed.add_field(name="💰 Economy", value="`!balance`, `!daily`, `!work`, `!casino`", inline=False)
     embed.add_field(name="🎒 Mysticism", value="`!expedition`, `!inventory`, `!item [name]`, `!recipes`", inline=False)
     embed.add_field(name="⚗️ Crafting", value="`!alchemy`, `!forge`", inline=False)
@@ -245,42 +255,46 @@ async def profile(ctx, member: discord.Member = None):
     acting_title = player["acting_name"] if player["pathway"] else "Civilian"
     
     embed.add_field(name="🧬 Pathway", value=f"**{pathway_name}**", inline=True)
-    embed.add_field(name="📜 Current Title", value=f"**{acting_title}**", inline=True)
-    embed.add_field(name="💰 Wealth", value=format_currency(player['balance']), inline=False)
+    embed.add_field(name="📜 Sequence name", value=f"**{acting_title}**", inline=True)
+    embed.add_field(name="💰 Wealth", value=format_currency(player['balance']), inline=True)
     
     # 1. Ascension Progress (XP to next sequence)
     asc_xp = player.get("ascension_xp", 0)
     asc_max = player.get("ascension_max_xp", 100)
     asc_percent = min(100, int((asc_xp / asc_max) * 100))
     asc_bar = "🔶" * (asc_percent // 10) + "🔸" * (10 - (asc_percent // 10))
-    embed.add_field(name=f"🆙 Ascension (Sequence {player['sequence']})", value=f"{asc_bar} ({asc_percent}%)", inline=False)
+    embed.add_field(name=f"🆙 Level (Sequence {player['sequence']})", value=f"{asc_bar} ({asc_percent}%)", inline=True)
 
     # 2. Acting Digestion (XP for the role)
     act_xp = player.get("acting_xp", 0)
-    act_max = player.get("acting_max_xp", 100)
+    act_max = player.get("acting_max_xp", 200)
     acting_percent = min(100, int((act_xp / act_max) * 100))
     acting_bar = "🟢" * (acting_percent // 10) + "⚪" * (10 - (acting_percent // 10))
-    embed.add_field(name="🎭 Acting Digestion", value=f"{acting_bar} ({acting_percent}%)", inline=False)
+    embed.add_field(name="🎭 Acting Digestion", value=f"{acting_bar} ({acting_percent}%)", inline=True)
 
     # 3. Sanity Bar
     sanity = player.get("sanity", 100)
     sanity_bar = "🟦" * (sanity // 10) + "⬜" * (10 - (sanity // 10))
-    embed.add_field(name="🧠 Sanity", value=f"{sanity_bar} ({sanity}%)", inline=False)
+    embed.add_field(name="🧠 Sanity", value=f"{sanity_bar} ({sanity}%)", inline=True)
     
     embed.add_field(name="🎒 Inventory", value=f"{len(player['inventory'])} items. Use `!inv`", inline=True)
     
-    # 4. Characteristics
+    # 4. Characteristics (Split into 2 columns)
     stats = player.get("stats", {s: 1 for s in COC_STATS})
-    stats_str = "\n".join([f"**{s}**: {stats.get(s,1)}" for s in COC_STATS])
-    embed.add_field(name="📊 Characteristics", value=stats_str, inline=True)
+    mid = len(COC_STATS) // 2
+    stats_col1 = "\n".join([f"**{STAT_NAMES.get(s, s)}**: {stats.get(s,1)}" for s in COC_STATS[:mid]])
+    stats_col2 = "\n".join([f"**{STAT_NAMES.get(s, s)}**: {stats.get(s,1)}" for s in COC_STATS[mid:]])
+    
+    embed.add_field(name="📊 Characteristics      ", value=stats_col1, inline=True)
+    embed.add_field(name="_________________________", value=stats_col2, inline=True)
     
     points = player.get("stat_points", 0)
     if points > 0:
-        embed.set_footer(text=f"✨ You have {points} stat points! Use !stat to open the menu.")
+        embed.set_footer(text=f"✨ You have {points} stat points! Use !stats to open the menu.")
     
     await ctx.send(embed=embed)
 
-@bot.command(name="stat")
+@bot.command(name="stats", aliases=["stat"])
 async def assign_stat_menu(ctx):
     """Open an interactive menu to assign stat points."""
     player = get_player(ctx.author.id)
@@ -293,11 +307,13 @@ async def assign_stat_menu(ctx):
         def __init__(self, user_id):
             super().__init__(timeout=60)
             self.user_id = user_id
+            self.history = [] # Track changes for undo
             for stat in COC_STATS:
-                self.add_item(self.create_button(stat))
+                self.add_item(self.create_stat_button(stat))
+            self.add_item(self.create_undo_button())
 
-        def create_button(self, stat_name):
-            button = discord.ui.Button(label=stat_name, style=discord.ButtonStyle.primary, custom_id=stat_name)
+        def create_stat_button(self, stat_name):
+            button = discord.ui.Button(label=stat_name, style=discord.ButtonStyle.primary)
             
             async def callback(interaction: discord.Interaction):
                 if interaction.user.id != self.user_id:
@@ -309,16 +325,32 @@ async def assign_stat_menu(ctx):
                 
                 player["stats"][stat_name] += 1
                 player["stat_points"] -= 1
+                self.history.append(stat_name)
                 save_json(DB_FILE, player_data)
                 
-                # Update embed
-                new_embed = self.create_embed(player)
-                if player["stat_points"] <= 0:
-                    await interaction.response.edit_message(embed=new_embed, view=None)
-                    self.stop()
-                else:
-                    await interaction.response.edit_message(embed=new_embed)
+                await interaction.response.edit_message(embed=self.create_embed(player), view=self)
             
+            button.callback = callback
+            return button
+
+        def create_undo_button(self):
+            button = discord.ui.Button(label="↩️ Undo", style=discord.ButtonStyle.danger)
+            
+            async def callback(interaction: discord.Interaction):
+                if interaction.user.id != self.user_id:
+                    return await interaction.response.send_message("❌ This is not your menu.", ephemeral=True)
+                
+                if not self.history:
+                    return await interaction.response.send_message("❌ Nothing to undo.", ephemeral=True)
+                
+                player = get_player(self.user_id)
+                last_stat = self.history.pop()
+                player["stats"][last_stat] -= 1
+                player["stat_points"] += 1
+                save_json(DB_FILE, player_data)
+                
+                await interaction.response.edit_message(embed=self.create_embed(player), view=self)
+                
             button.callback = callback
             return button
 
@@ -328,7 +360,7 @@ async def assign_stat_menu(ctx):
             stats_str = "\n".join([f"**{s}**: {stats.get(s,1)}" for s in COC_STATS])
             embed.add_field(name="Stats", value=stats_str, inline=True)
             embed.add_field(name="Available Points", value=f"✨ **{player['stat_points']}**", inline=True)
-            embed.set_footer(text="Click a button to add +1 point")
+            embed.set_footer(text="Click a button to add +1 | Use Undo to revert session changes")
             return embed
 
     view = StatView(ctx.author.id)
@@ -404,7 +436,7 @@ async def daily(ctx):
     if not can_run: return await ctx.send(f"⏳ **Cooldown:** Wait **{format_timedelta(rem)}**.")
     player["balance"] += 120
     player["ascension_xp"] = min(player.get("ascension_max_xp", 100), player.get("ascension_xp", 0) + 20)
-    player["acting_xp"] = min(player.get("acting_max_xp", 100), player.get("acting_xp", 0) + 15)
+    player["acting_xp"] = min(player.get("acting_max_xp", 200), player.get("acting_xp", 0) + 15)
     
     # Random item
     item_id = random.choice(list(items_db.keys()))
@@ -469,7 +501,7 @@ async def expedition(ctx):
         sanity_loss = random.randint(3, 5)
         player["balance"] += reward
         player["ascension_xp"] = min(player.get("ascension_max_xp", 100), player.get("ascension_xp", 0) + xp_gain)
-        player["acting_xp"] = min(player.get("acting_max_xp", 100), player.get("acting_xp", 0) + acting_gain)
+        player["acting_xp"] = min(player.get("acting_max_xp", 200), player.get("acting_xp", 0) + acting_gain)
         player["sanity"] = max(0, player["sanity"] - sanity_loss)
         
         # Always give an item
@@ -581,7 +613,7 @@ async def act(ctx):
     bonus = int(base_gain * (mastery_level * 0.5)) # +50% per mastery level
     total_gain = base_gain + bonus
     
-    player["acting_xp"] = min(player.get("acting_max_xp", 100), player.get("acting_xp", 0) + total_gain)
+    player["acting_xp"] = min(player.get("acting_max_xp", 200), player.get("acting_xp", 0) + total_gain)
     player["acting_mastery"] = mastery + 1
     player["last_act"] = datetime.now().isoformat()
     
@@ -631,7 +663,7 @@ async def advance_sequence(ctx):
         return await ctx.send(f"⚠️ You need the **{next_seq_data['name']} Potion** to advance.")
 
     # Calculate Sanity Loss
-    acting_percent = (player.get("acting_xp", 0) / player.get("acting_max_xp", 100)) * 100
+    acting_percent = (player.get("acting_xp", 0) / player.get("acting_max_xp", 200)) * 100
     
     if acting_percent >= 100:
         sanity_loss = random.randint(10, 35) # Acting is 100% -> Max 35% loss
@@ -661,7 +693,7 @@ async def advance_sequence(ctx):
     embed.add_field(name="🧠 Sanity Loss", value=f"-{sanity_loss}%", inline=True)
     
     if acting_percent < 100:
-        embed.set_footer(text="The remains of the previous potion fought against the new one. Your mind is fragile.")
+        embed.set_footer(text="The remaining will of the potion fought against yours. you barely advanced without loosing control, your mind is fragile.")
     else:
         embed.set_footer(text="The transition was stabilized by your perfect acting. You feel more solid.")
 
