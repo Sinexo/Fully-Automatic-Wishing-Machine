@@ -1,34 +1,2241 @@
 {
-    "human_faced_rose": {
-        "name": "Human-faced Rose",
-        "image": "human_faced_rose.png",
-        "description": "A unique blue rose with red veins running across its petals, creating the illusion of a grinning human face. It emits an eerie illusion of laughter and crying intertwined.",
-        "effects": [
-            "calm"
-        ]
-    },
-    "wraith_dust": {
-        "name": "Ancient Wraith's Dust",
-        "image": "wraith_dust.png",
-        "description": "Remaining dust from an Ancient Wraith. It feels cold to the touch and seems to contain the echoes of forgotten memories.",
-        "effects": [
-            "spirit_vision"
-        ]
-    },
-    "lava_dragon_blood": {
-        "name": "Lava-dragon Blood",
-        "image": "lava_dragon_blood.png",
-        "description": "Glistening red liquid that remains hot even in freezing temperatures. Obtained from a Lava-dragon.",
-        "effects": [
-            "physical_boost"
-        ]
-    },
-    "murloc_bladder": {
-        "name": "Murloc Bladder",
-        "image": "murloc_bladder.png",
-        "description": "A slippery, translucent organ from a Murloc. It has a faint salty smell.",
-        "effects": [
-            "insight"
-        ]
-    }
+	"human_faced_rose": {
+		"name": "Human-faced Rose",
+		"image": "human_faced_rose.png",
+		"description": "A unique blue rose with red veins running across its petals, creating the illusion of a grinning human face. It emits an eerie illusion of laughter and crying intertwined.",
+		"effects": [
+			"calm"
+		]
+	},
+	"wraith_dust": {
+		"name": "Ancient Wraith's Dust",
+		"image": "wraith_dust.png",
+		"description": "Remaining dust from an Ancient Wraith. It feels cold to the touch and seems to contain the echoes of forgotten memories.",
+		"effects": [
+			"spirit_vision"
+		]
+	},
+	"lava_dragon_blood": {
+		"name": "Lava-dragon Blood",
+		"image": "lava_dragon_blood.png",
+		"description": "Glistening red liquid that remains hot even in freezing temperatures. Obtained from a Lava-dragon.",
+		"effects": [
+			"physical_boost"
+		]
+	},
+	"murloc_bladder": {
+		"name": "Murloc Bladder",
+		"image": "murloc_bladder.png",
+		"description": "A slippery, translucent organ from a Murloc. It has a faint salty smell.",
+		"effects": [
+			"insight"
+		]
+	},
+	"dark_demonic_wolf_blood": {
+		"name": "Dark Demonic Wolf Blood",
+		"image": "dark_demonic_wolf_blood.png",
+		"description": "Deep black blood that feels heavy with ancient, dark energy.",
+		"effects": [
+			"knowledge"
+		]
+	},
+	"spirit_world_plunderer_soul": {
+		"name": "Spirit World Plunderer True Soul Body",
+		"image": "spirit_world_plunderer_soul.png",
+		"description": "A palm-sized entity of coiled maggots resembling a human form, filled with colorless liquid and emitting black light bubbles.",
+		"effects": [
+			"transformation",
+			"madness_resistance"
+		]
+	},
+	"lavos_squid_blood": {
+		"name": "Lavos Squid Blood",
+		"image": "lavos_squid_blood.png",
+		"description": "Striking blue blood that emits illusory bubbles. Must be stored in opaque containers.",
+		"effects": [
+			"spirit_vision"
+		]
+	},
+	"starlight_insect": {
+		"name": "Starlight Insect",
+		"image": "starlight_insect.png",
+		"description": "An insect formed from resplendent starlight, its body forming a magical glow like illusory doors.",
+		"effects": [
+			"insight"
+		]
+	},
+	"human_skinned_shadow_diamond": {
+		"name": "Human-skinned Shadow Characteristic",
+		"image": "human_skinned_shadow_diamond.png",
+		"description": "A massive diamond with numerous facets, each reflecting a different face.",
+		"effects": [
+			"transformation"
+		]
+	},
+	"magician_liquid": {
+		"name": "Translucent Magician Liquid",
+		"image": "magician_liquid.png",
+		"description": "A seemingly translucent liquid with intricate clarity levels that vary upon inspection.",
+		"effects": [
+			"stealth"
+		]
+	},
+	"magician_root": {
+		"name": "Magician's Heart-shaped Root",
+		"image": "magician_root.png",
+		"description": "A heart-shaped, brown root that resembles an old man's skin and exhibits slight vitality.",
+		"effects": [
+			"calm"
+		]
+	},
+	"hound_of_fullgrim_blood": {
+		"name": "Hound of Fullgrim Blood",
+		"image": "hound_of_fullgrim_blood.png",
+		"description": "Thick, dark-red blood from a Hound of Fullgrim, pulsating with afterlife energy.",
+		"effects": [
+			"knowledge"
+		]
+	},
+	"hound_of_fullgrim_eyeball": {
+		"name": "Hound of Fullgrim Eyeball",
+		"image": "hound_of_fullgrim_eyeball.png",
+		"description": "A dark-red eyeball that appears to be burning with internal flames.",
+		"effects": [
+			"spirit_vision"
+		]
+	},
+	"demonic_wolf_of_fog_heart": {
+		"name": "Demonic Wolf of Fog Heart",
+		"image": "demonic_wolf_of_fog_heart.png",
+		"description": "A peculiar heart composed entirely of wisps of white mist.",
+		"effects": [
+			"stealth"
+		]
+	},
+	"bizarro_bane_eye": {
+		"name": "Bizarro Bane Main Eye",
+		"image": "bizarro_bane_eye.png",
+		"description": "The central eye of a Bizarro Bane, reflecting shifting, chaotic realities.",
+		"effects": [
+			"insight",
+			"spirit_vision"
+		]
+	},
+	"worm_of_time": {
+		"name": "Worm of Time",
+		"image": "worm_of_time.png",
+		"description": "A translucent worm with twelve transparent rings, shimmering with temporal power.",
+		"effects": [
+			"knowledge"
+		]
+	},
+	"rainbow_salamander_gland": {
+		"name": "Rainbow Salamander Pituitary Gland",
+		"image": "rainbow_salamander_gland.png",
+		"description": "A palm-sized object constantly changing in color, filled with complex ridges.",
+		"effects": [
+			"spirit_vision"
+		]
+	},
+	"illusory_chime_fruit": {
+		"name": "Illusory Chime Tree Fruit",
+		"image": "illusory_chime_fruit.png",
+		"description": "A fist-sized, colorless, translucent fruit that seems to ring faintly when moved.",
+		"effects": [
+			"calm"
+		]
+	},
+	"manhal_fish_eyeball": {
+		"name": "Manhal Fish Eyeball",
+		"image": "manhal_fish_eyeball.png",
+		"description": "The crystal-clear eyeball of a matured Manhal Fish.",
+		"effects": [
+			"insight"
+		]
+	},
+	"historical_papers": {
+		"name": "Stack of Historical Papers",
+		"image": "historical_papers.png",
+		"description": "Ancient, weathered papers that contain the weight of forgotten history.",
+		"effects": [
+			"knowledge"
+		]
+	},
+	"crystalline_frost": {
+		"name": "Demonic Wolf Crystalline Frost",
+		"image": "crystalline_frost.png",
+		"description": "Ethereal frost that emanates freezing air and never melts.",
+		"effects": [
+			"calm"
+		]
+	},
+	"sonia_golden_spring_water": {
+		"name": "Sonia Golden Spring Water",
+		"image": "sonia_golden_spring_water.png",
+		"description": "A pale gold liquid from Sonia Island that invokes a deep sense of thirst.",
+		"effects": [
+			"physical_boost"
+		]
+	},
+	"asmann_brain": {
+		"name": "Asmann Brain",
+		"image": "asmann_brain.png",
+		"description": "A grayish-white, translucent, and wrinkled brain that induces hallucinations if not contained.",
+		"effects": [
+			"transformation",
+			"madness_resistance"
+		]
+	},
+	"six_winged_gargoyle_crystal": {
+		"name": "Six-Winged Gargoyle Core Crystal",
+		"image": "six_winged_gargoyle_crystal.png",
+		"description": "A grayish-white translucent crystal that served as the heart of a gargoyle.",
+		"effects": [
+			"physical_boost"
+		]
+	},
+	"naga_hair": {
+		"name": "Deep-sea Naga Hair",
+		"image": "naga_hair.png",
+		"description": "A dark blue hair strand that resembles a miniature snake.",
+		"effects": [
+			"stealth"
+		]
+	},
+	"blue_shadow_falcon_feather": {
+		"name": "Blue Shadow Falcon Crystalline Feather",
+		"image": "blue_shadow_falcon_feather.png",
+		"description": "A feather that glimmers with a faint azure light and feels as hard as crystal.",
+		"effects": [
+			"stealth"
+		]
+	},
+	"stone_golem_core": {
+		"name": "Stone Golem Core",
+		"image": "stone_golem_core.png",
+		"description": "The pulsating heart of a stone golem, radiating a sense of immense stability.",
+		"effects": [
+			"physical_boost"
+		]
+	},
+	"antique_mirror_500y": {
+		"name": "500-year Antique Mirror",
+		"image": "antique_mirror_500y.png",
+		"description": "An antique mirror with a silver frame, over 500 years old. It seems to reflect a world that isn't quite our own.",
+		"effects": [
+			"insight"
+		]
+	},
+	"murloc_gem_bladder": {
+		"name": "Murloc Gem Bladder",
+		"image": "murloc_gem_bladder.png",
+		"description": "A Murloc bladder containing a transparent gem-like object that emits azure light.",
+		"effects": [
+			"insight"
+		]
+	},
+	"magma_elf_core": {
+		"name": "Magma Elf Core",
+		"image": "magma_elf_core.png",
+		"description": "A burning core from a Magma Elf, radiating intense heat and flickering with life.",
+		"effects": [
+			"physical_boost"
+		]
+	},
+	"black_hunting_spider_eye": {
+		"name": "Black Hunting Spider Eye",
+		"image": "black_hunting_spider_eye.png",
+		"description": "A cold, multi-faceted eye that seems to be constantly calculating its surroundings.",
+		"effects": [
+			"insight"
+		]
+	},
+	"faded_egg_crystal": {
+		"name": "Faded Egg Crystal",
+		"image": "faded_egg_crystal.png",
+		"description": "Fragile egg-like crystals containing swishing water that never stops moving.",
+		"effects": [
+			"calm"
+		]
+	},
+	"sunflower_black": {
+		"name": "Black-rimmed Sunflower",
+		"image": "sunflower_black.png",
+		"description": "A sunflower with petals tipped in deep black, radiating a strange, muted warmth.",
+		"effects": [
+			"calm"
+		]
+	},
+	"sunflower_golden": {
+		"name": "Golden-rimmed Sunflower",
+		"image": "sunflower_golden.png",
+		"description": "A sunflower that glows with a brilliant golden light, even in total darkness.",
+		"effects": [
+			"calm"
+		]
+	},
+	"sunflower_white": {
+		"name": "White-rimmed Sunflower",
+		"image": "sunflower_white.png",
+		"description": "A sunflower with pure white rims, symbolizing clarity and peace.",
+		"effects": [
+			"calm"
+		]
+	},
+	"rosemary_needle": {
+		"name": "Mystical Rosemary Needle",
+		"image": "rosemary_needle.png",
+		"description": "Fragrant, evergreen needle-like leaves with white or blue flowers.",
+		"effects": [
+			"calm"
+		]
+	},
+	"distilled_water_pure": {
+		"name": "Repeatedly Distilled Water",
+		"image": "distilled_water_pure.png",
+		"description": "Water of extreme purity, free of all contaminants and rich in mystical potential.",
+		"effects": [
+			"insight"
+		]
+	},
+	"gemstone_powder": {
+		"name": "Fine Gemstone Powder",
+		"image": "gemstone_powder.png",
+		"description": "A shimmering powder derived from crushed mystical gemstones.",
+		"effects": [
+			"knowledge"
+		]
+	},
+	"black_powder_mystic": {
+		"name": "Deep Black Mystic Powder",
+		"image": "black_powder_mystic.png",
+		"description": "A fine, deep black powder that feels strangely heavy and cold.",
+		"effects": [
+			"madness_resistance"
+		]
+	},
+	"starlight_door_insect": {
+		"name": "Starlight Door Insect",
+		"image": "starlight_door_insect.png",
+		"description": "An insect shaped like a semi-circle, glowing with the light of illusory doors.",
+		"effects": [
+			"transformation"
+		]
+	},
+	"spirit_worm": {
+		"name": "Worm of Spirit",
+		"image": "spirit_worm.png",
+		"description": "A transparent maggot with three-dimensional patterns, carrying a sliver of spiritual essence.",
+		"effects": [
+			"spirit_vision"
+		]
+	},
+	"rainbow_salamander_pituitary": {
+		"name": "Rainbow Salamander Pituitary",
+		"image": "rainbow_salamander_pituitary.png",
+		"description": "A soft, lustrous gland that shifts through every color of the rainbow.",
+		"effects": [
+			"transformation"
+		]
+	},
+	"manhal_fish_eye_matured": {
+		"name": "Matured Manhal Fish Eye",
+		"image": "manhal_fish_eye_matured.png",
+		"description": "A large, clear eye that seems to possess a gaze of its own.",
+		"effects": [
+			"insight"
+		]
+	},
+	"dark_demonic_wolf_heart": {
+		"name": "Dark Demonic Wolf Heart",
+		"image": "dark_demonic_wolf_heart.png",
+		"description": "A blackened heart that still beats with a slow, ominous rhythm.",
+		"effects": [
+			"physical_boost",
+			"madness_resistance"
+		]
+	},
+	"ancient_wraith_dust": {
+		"name": "Dust of Ancient Wraiths",
+		"image": "ancient_wraith_dust.png",
+		"description": "Dust gathered from the remains of an Ancient Wraith, cold and ephemeral.",
+		"effects": [
+			"spirit_vision",
+			"stealth"
+		]
+	},
+	"lava_squid_blood_alt": {
+		"name": "Lavos Squid Blood (Refined)",
+		"image": "lava_squid_blood_alt.png",
+		"description": "Blue blood from a Lavos Squid, refined to maintain its spiritual properties.",
+		"effects": [
+			"spirit_vision"
+		]
+	},
+	"interrogator_blood_venom": {
+		"name": "Interrogator's Blood Venom",
+		"image": "interrogator_blood_venom.png",
+		"description": "A highly toxic substance that induces numbness and compliance.",
+		"effects": [
+			"transformation"
+		]
+	},
+	"sheriff_badge_iron": {
+		"name": "Sheriff's Iron Badge",
+		"image": "sheriff_badge_iron.png",
+		"description": "An iron badge that carries the weight of authority and order.",
+		"effects": [
+			"madness_resistance"
+		]
+	},
+	"gold_mint_leaves": {
+		"name": "Gold Mint Leaves",
+		"image": "gold_mint_leaves.png",
+		"description": "Leaves emitting a fresh and stimulating scent.",
+		"effects": [
+			"insight"
+		]
+	},
+	"night_vanilla_liquids": {
+		"name": "Night Vanilla Liquids",
+		"image": "night_vanilla_liquids.png",
+		"description": "A herb native to the red moon, possessing unique properties. Its essence can be extracted and preserved as an essential oil for various uses.",
+		"effects": [
+			"insight"
+		]
+	},
+	"redhair_birch_bark": {
+		"name": "Red-hair Birch Bark",
+		"image": "redhair_birch_bark.png",
+		"description": "The supplementary ingredient of the Bizarro Sorcerer potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"real_ancient_historical_records": {
+		"name": "Real Ancient Historical Records",
+		"image": "real_ancient_historical_records.png",
+		"description": "A stack of historical papers.",
+		"effects": [
+			"knowledge"
+		]
+	},
+	"dark_demonic_wolfs_blood": {
+		"name": "Dark Demonic Wolf's Blood",
+		"image": "dark_demonic_wolfs_blood.png",
+		"description": "A Deep black blood of the Dark Demonic Wolf.",
+		"effects": [
+			"stealth"
+		]
+	},
+	"humanfaced_rose_complete_stalk": {
+		"name": "Human-Faced Rose Complete Stalk",
+		"image": "humanfaced_rose_complete_stalk.png",
+		"description": "A unique blue rose with red veins running across its petals, creating the illusion of a grinning human face. It emits an eerie illusion of laughter and crying intertwined.",
+		"effects": [
+			"transformation"
+		]
+	},
+	"blackrimmed_sunflower_powder": {
+		"name": "Black-Rimmed Sunflower Powder",
+		"image": "blackrimmed_sunflower_powder.png",
+		"description": "The supplementary ingredient of the Clown potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"spirit_world_plunderer_true_soul": {
+		"name": "Spirit World Plunderer True Soul",
+		"image": "spirit_world_plunderer_true_soul.png",
+		"description": "True Soul Body of a Spirit World Plunderer. A palm-sized entity comprised of coiled maggots resembling a human form, filled with colorless liquid. Bubbles emit black light, revealing intricate patterns and symbols embodying knowledge, power, transformation, secrets, strangeness, and madness.",
+		"effects": [
+			"spirit_vision",
+			"physical_boost",
+			"transformation",
+			"knowledge",
+			"madness_resistance"
+		]
+	},
+	"dust_of_ancient_wraiths": {
+		"name": "Dust of Ancient Wraiths",
+		"image": "dust_of_ancient_wraiths.png",
+		"description": "Dust of Ancient Wraiths.",
+		"effects": [
+			"spirit_vision",
+			"knowledge"
+		]
+	},
+	"thousandfaced_hunters_blood": {
+		"name": "Thousand-faced Hunter's Blood",
+		"image": "thousandfaced_hunters_blood.png",
+		"description": "A viscous liquid that could change its color based on the change of light.",
+		"effects": [
+			"transformation"
+		]
+	},
+	"remnant_spirituality_ofancient_wraiths": {
+		"name": "Remnant Spirituality of\n\t\t\t\t\t\t\t\t\t\t\t\tAncient Wraiths",
+		"image": "remnant_spirituality_ofancient_wraiths.png",
+		"description": "Phosphorescent spots floating within the tube exhibit a peculiar behavior upon contact with the glass wall. They expand, coalescing into a face with blurred features that morph into an open mouth, emitting a silent scream.",
+		"effects": [
+			"insight"
+		]
+	},
+	"sixwinged_gargoyle_eyes": {
+		"name": "Six-Winged Gargoyle Eyes",
+		"image": "sixwinged_gargoyle_eyes.png",
+		"description": "An eyeball emitting a red glow,",
+		"effects": [
+			"insight"
+		]
+	},
+	"dark_demonic_wolfs_heart": {
+		"name": "Dark Demonic Wolf's Heart",
+		"image": "dark_demonic_wolfs_heart.png",
+		"description": "A heart of the Dark Demonic Wolf.",
+		"effects": [
+			"stealth"
+		]
+	},
+	"fantasy_grass_essential_oil": {
+		"name": "Fantasy Grass Essential Oil",
+		"image": "fantasy_grass_essential_oil.png",
+		"description": "The supplementary ingredient of the Magician, Briber potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"mutatedpituitary_gland_of_a_thousandfaced_hunter": {
+		"name": "Mutated\n\t\t\t\t\t\t\t\t\t\t\t\tpituitary gland of a Thousand-faced Hunter",
+		"image": "mutatedpituitary_gland_of_a_thousandfaced_hunter.png",
+		"description": "Resembling a yellowish-brown peeled walnut with grooves and ridges reminiscent of a brain, this organ exhibits a constantly shifting appearance. At times, it appears gray and wrinkled, while at others, it becomes dark brown and extremely smooth. The colors intertwine, occasionally outlining a featureless face.",
+		"effects": [
+			"stealth",
+			"transformation"
+		]
+	},
+	"white_frost_crystal_ofdemonic_wolf_of_fog": {
+		"name": "White Frost Crystal of\n\t\t\t\t\t\t\t\t\t\t\t\tDemonic Wolf of Fog",
+		"image": "white_frost_crystal_ofdemonic_wolf_of_fog.png",
+		"description": "A crystalline frost of the Demonic Wolf of Fog. It emanating cold air.",
+		"effects": [
+			"insight"
+		]
+	},
+	"golden_cloak_grass_powder": {
+		"name": "Golden Cloak Grass Powder",
+		"image": "golden_cloak_grass_powder.png",
+		"description": "The supplementary ingredient of the Clown potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"hound_of_fulgrim_blood": {
+		"name": "Hound of Fulgrim Blood",
+		"image": "hound_of_fulgrim_blood.png",
+		"description": "Thick, dark-red blood of the Hound of Fullgrim.",
+		"effects": [
+			"stealth"
+		]
+	},
+	"tornapple_jimsonweed_juice": {
+		"name": "Tornapple (Jimsonweed) Juice",
+		"image": "tornapple_jimsonweed_juice.png",
+		"description": "The supplementary ingredient of the Clown, Faceless, Witch potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"spring_water_of_golden_spring": {
+		"name": "Spring Water of Golden Spring",
+		"image": "spring_water_of_golden_spring.png",
+		"description": "Also known as the Spring of the Elves and the Sonia Golden Springs. The spring water from Sonia Island. A pale gold liquid that spreads out slowly, maintaining a clear and transparent appearance. Its presence invokes a subconscious sense of thirst, as if one longs to drink a cup of it to quench their thirst.",
+		"effects": [
+			"insight",
+			"transformation"
+		]
+	},
+	"spirit_world_plunderers_dust": {
+		"name": "Spirit World Plunderer's Dust",
+		"image": "spirit_world_plunderers_dust.png",
+		"description": "The remain dust of a Spirit World Plunderer.",
+		"effects": [
+			"spirit_vision"
+		]
+	},
+	"star_crystal": {
+		"name": "Star Crystal",
+		"image": "star_crystal.png",
+		"description": "An exceptionally pure crystal with a gelatinous appearance reminiscent of Earthly jelly. Despite its lack of hardness, it reflects light in a mesmerizing manner, appearing to contain a luminous void of stars when illuminated by blue light. Its properties make it an ideal material for crafting divination crystals.",
+		"effects": [
+			"transformation"
+		]
+	},
+	"fingernailsized_selfmaderubber_mask": {
+		"name": "Fingernail-Sized Self-made\n\t\t\t\t\t\t\t\t\t\t\t\tRubber Mask",
+		"image": "fingernailsized_selfmaderubber_mask.png",
+		"description": "The supplementary ingredient of the Bizarro Sorcerer potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"lavos_squids_crystallizedblood": {
+		"name": "Lavos Squid's Crystallized\n\t\t\t\t\t\t\t\t\t\t\t\tBlood",
+		"image": "lavos_squids_crystallizedblood.png",
+		"description": "The blood of Lavos Squid's. The unique substance exhibits a striking blue hue. Occasionally, it emits illusory bubbles, suggestive of a connection to the spiritual realm. However, its distinctive properties degrade rapidly under sunlight, necessitating storage in opaque containers to preserve its unique qualities.",
+		"effects": [
+			"spirit_vision"
+		]
+	},
+	"worm_of_star": {
+		"name": "Worm of Star",
+		"image": "worm_of_star.png",
+		"description": "An insect formed from resplendent starlight, its body is bent into a semi-circle, forming a magical glow that resembled illusory doors.",
+		"effects": [
+			"physical_boost"
+		]
+	},
+	"poison_hemlock": {
+		"name": "Poison Hemlock",
+		"image": "poison_hemlock.png",
+		"description": "A highly toxic substance that induces numbness throughout the body, potentially leading to death if ingested. Historically, it has been notorious as a method of suicide due to its potent effects.",
+		"effects": [
+			"physical_boost"
+		]
+	},
+	"bizarro_banes_blood": {
+		"name": "Bizarro Bane's Blood",
+		"image": "bizarro_banes_blood.png",
+		"description": "The blood of Bizarro Bane.",
+		"effects": [
+			"insight"
+		]
+	},
+	"humanskined_shadowscharacteristic": {
+		"name": "Human-Skined Shadow's\n\t\t\t\t\t\t\t\t\t\t\t\tCharacteristic",
+		"image": "humanskined_shadowscharacteristic.png",
+		"description": "A Characteristic of Human-Skinned Shadow. A massive diamond with numerous facets, each reflecting light to reveal a multitude of faces. The faces are densely packed, layered, and create a dizzying effect when observed.",
+		"effects": [
+			"stealth"
+		]
+	},
+	"dark_patterned_blackpanther_spinal_fluid": {
+		"name": "Dark Patterned Black\n\t\t\t\t\t\t\t\t\t\t\t\tPanther Spinal Fluid",
+		"image": "dark_patterned_blackpanther_spinal_fluid.png",
+		"description": "A seemingly translucent liquid with intricate clarity levels, discernible upon close inspection. Transparency varies at different levels, satisfying those with obsessive-compulsive tendencies.",
+		"effects": [
+			"insight"
+		]
+	},
+	"dragon_blood_grass_powder": {
+		"name": "Dragon Blood Grass Powder",
+		"image": "dragon_blood_grass_powder.png",
+		"description": "A deep black powder.",
+		"effects": [
+			"insight"
+		]
+	},
+	"black_jimsonweed_juice": {
+		"name": "Black Jimsonweed Juice",
+		"image": "black_jimsonweed_juice.png",
+		"description": "The supplementary ingredient of the Faceless, Briber, Pleasure potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"drago_bark": {
+		"name": "Drago Bark",
+		"image": "drago_bark.png",
+		"description": "The supplementary ingredient of the Marionettist potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"mist_treants_true_root": {
+		"name": "Mist Treant's True Root",
+		"image": "mist_treants_true_root.png",
+		"description": "A heart-shaped, brown, palm-sized root, wrinkled in appearance resembling an old man's skin. Its back, however, is smooth and exquisite, akin to a gem. It exhibits slight expansion and contraction, suggesting a degree of vitality.",
+		"effects": [
+			"transformation"
+		]
+	},
+	"hornacis_gray_mountain_goat_horn": {
+		"name": "Hornacis Gray Mountain Goat Horn",
+		"image": "hornacis_gray_mountain_goat_horn.png",
+		"description": "A palm-sized horn from the gray mountain goat, resembling a miniature version of a typical goat horn. It is crystal clear, with swirling colors and faint layers of distinctive patterns.",
+		"effects": [
+			"insight"
+		]
+	},
+	"mist_treant_juice": {
+		"name": "Mist Treant Juice",
+		"image": "mist_treant_juice.png",
+		"description": "A light green and sparkling, making it look very delicious.",
+		"effects": [
+			"insight"
+		]
+	},
+	"hound_of_fulgrim_eyes": {
+		"name": "Hound of Fulgrim Eyes",
+		"image": "hound_of_fulgrim_eyes.png",
+		"description": "The Dark-red burning flames eyeballs of the Hound of Fullgrim.",
+		"effects": [
+			"insight",
+			"stealth"
+		]
+	},
+	"demonic_wolf_of_fogstransformed_heart": {
+		"name": "Demonic Wolf of Fog's\n\t\t\t\t\t\t\t\t\t\t\t\tTransformed Heart",
+		"image": "demonic_wolf_of_fogstransformed_heart.png",
+		"description": "A peculiar Demonic Wolf of Fog's heart composed of wisps of white mist.",
+		"effects": [
+			"insight"
+		]
+	},
+	"bizarro_banes_main_eye": {
+		"name": "Bizarro Bane's Main Eye",
+		"image": "bizarro_banes_main_eye.png",
+		"description": "The main eye of Bizarro Bane.",
+		"effects": [
+			"insight"
+		]
+	},
+	"droplet_gem_powder": {
+		"name": "Droplet Gem Powder",
+		"image": "droplet_gem_powder.png",
+		"description": "A fine powder derived from gemstones.",
+		"effects": [
+			"physical_boost"
+		]
+	},
+	"purified_water": {
+		"name": "Purified Water",
+		"image": "purified_water.png",
+		"description": "Water that has undergone repeated distillation, resulting in the removal of impurities and contaminants, leaving behind a high degree of purity.",
+		"effects": [
+			"insight"
+		]
+	},
+	"dragon_tooth_grass_powder": {
+		"name": "Dragon Tooth Grass Powder",
+		"image": "dragon_tooth_grass_powder.png",
+		"description": "The supplementary ingredient of the Faceless, Telepathist potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"sixwinged_gargoyles_corecrystal": {
+		"name": "Six-Winged Gargoyle's Core\n\t\t\t\t\t\t\t\t\t\t\t\tCrystal",
+		"image": "sixwinged_gargoyles_corecrystal.png",
+		"description": "The core crystal of Six-Winged Gargoyle. A grayish-white translucent crystal, serving as the central crystalline structure of the Six-Winged Gargoyle.",
+		"effects": [
+			"physical_boost"
+		]
+	},
+	"deepsea_naga_hair_strand": {
+		"name": "Deep-sea Naga Hair Strand",
+		"image": "deepsea_naga_hair_strand.png",
+		"description": "A dark blue hair strand of Deep-sea Naga. It resembling miniature snakes.",
+		"effects": [
+			"stealth"
+		]
+	},
+	"golden_grapevines": {
+		"name": "Golden Grapevines",
+		"image": "golden_grapevines.png",
+		"description": "The supplementary ingredient of the Bizarro Sorcerer potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"asmanns_complete_brain": {
+		"name": "Asmann's Complete Brain",
+		"image": "asmanns_complete_brain.png",
+		"description": "A complete brain of Asmann. The blob appeared as a grayish-white, translucent, and wrinkled object. Without the gold enclosing it, the brain of an Asmann would incessantly influence one, inducing hallucinations until mental faculties were lost.",
+		"effects": [
+			"insight"
+		]
+	},
+	"hornbeam_essential_oils": {
+		"name": "Hornbeam Essential Oils",
+		"image": "hornbeam_essential_oils.png",
+		"description": "The supplementary ingredient of the Trickmaster, Reaper potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"spirit_eaters_stomach_pouch": {
+		"name": "Spirit Eater's Stomach Pouch",
+		"image": "spirit_eaters_stomach_pouch.png",
+		"description": "The main ingredient of the Trickmaster potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"string_grass_powder": {
+		"name": "String Grass Powder",
+		"image": "string_grass_powder.png",
+		"description": "The supplementary ingredient of the Trickmaster potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"cursed_artifacts_of_anancient_wraith": {
+		"name": "Cursed artifacts of an\n\t\t\t\t\t\t\t\t\t\t\t\tancient wraith",
+		"image": "cursed_artifacts_of_anancient_wraith.png",
+		"description": "A cursed artifacts of an Ancient Wraiths.",
+		"effects": [
+			"spirit_vision",
+			"knowledge"
+		]
+	},
+	"meteorite_crystal": {
+		"name": "Meteorite Crystal",
+		"image": "meteorite_crystal.png",
+		"description": "The main ingredient of the Astrologer potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"gregraces_left_claw": {
+		"name": "Gregrace's Left Claw",
+		"image": "gregraces_left_claw.png",
+		"description": "The left claw of the Phoenix Ancestor, Gregrace. Serves as an alternative for a Key of Stars Beyonder Characteristic.",
+		"effects": [
+			"insight"
+		]
+	},
+	"worm_of_spirit": {
+		"name": "Worm of Spirit",
+		"image": "worm_of_spirit.png",
+		"description": "A transparent maggot with three-dimensional patterns. It serves as components of the Fool Pathway Mythical Creature Form. Each Worm of Spirit contains a part of the Spirit Body. The death of each Worm of Spirit causes damage to the Spirit Body.",
+		"effects": [
+			"spirit_vision",
+			"physical_boost"
+		]
+	},
+	"deep_sea_marlins_blood": {
+		"name": "Deep Sea Marlin's Blood",
+		"image": "deep_sea_marlins_blood.png",
+		"description": "The main ingredient of the Trickmaster potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"aurmirs_right_eye": {
+		"name": "Aurmir's Right Eye",
+		"image": "aurmirs_right_eye.png",
+		"description": "The right eye of the Giant King, Aurmir. Serves as an alternative for a Worm of Time Beyonder Characteristic.",
+		"effects": [
+			"insight"
+		]
+	},
+	"rainbow_salamandercomplete_pituitary_gland": {
+		"name": "Rainbow Salamander\n\t\t\t\t\t\t\t\t\t\t\t\tComplete Pituitary Gland",
+		"image": "rainbow_salamandercomplete_pituitary_gland.png",
+		"description": "A complete pituitary gland of Rainbow Salamander. A palm-sized object constantly changing in color, characterized by its soft texture, lustrous hues, and filled with ridges.",
+		"effects": [
+			"insight"
+		]
+	},
+	"minddragons_complete_pituitary_gland_adolescent": {
+		"name": "Mind\n\t\t\t\t\t\t\t\t\t\t\t\tDragon's Complete Pituitary Gland (Adolescent)",
+		"image": "minddragons_complete_pituitary_gland_adolescent.png",
+		"description": "The main ingredient of the Hypnotist potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"blackhunting_giantlizards_spinal_fluid": {
+		"name": "Black-Hunting Giant\n\t\t\t\t\t\t\t\t\t\t\t\tLizard's Spinal Fluid",
+		"image": "blackhunting_giantlizards_spinal_fluid.png",
+		"description": "The main ingredient of the Hypnotist potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"tree_of_elders_fruit": {
+		"name": "Tree of Elder's Fruit",
+		"image": "tree_of_elders_fruit.png",
+		"description": "The main ingredient of the Psychiatrist potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"pure_white_elf_flowers": {
+		"name": "Pure White Elf Flowers",
+		"image": "pure_white_elf_flowers.png",
+		"description": "The supplementary ingredient of the Telepathist potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"mind_illusion_crystal": {
+		"name": "Mind Illusion Crystal",
+		"image": "mind_illusion_crystal.png",
+		"description": "The main ingredient of the Dreamwalker potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"tree_mentors_golden_leaf": {
+		"name": "Tree Mentor's Golden Leaf",
+		"image": "tree_mentors_golden_leaf.png",
+		"description": "The supplementary ingredient of the Manipulator potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"goathorned_blackfish_blood": {
+		"name": "Goat-Horned Blackfish Blood",
+		"image": "goathorned_blackfish_blood.png",
+		"description": "The main ingredient of the Spectator potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"mind_dragons_completebrain_adult": {
+		"name": "Mind Dragon's Complete\n\t\t\t\t\t\t\t\t\t\t\t\tBrain (Adult)",
+		"image": "mind_dragons_completebrain_adult.png",
+		"description": "The main ingredient of the Dreamwalker potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"mind_dragons_blood_adult": {
+		"name": "Mind Dragon's Blood (Adult)",
+		"image": "mind_dragons_blood_adult.png",
+		"description": "The supplementary ingredient of the Dreamwalker potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"cow_teeth_paeonol_powder": {
+		"name": "Cow Teeth Paeonol Powder",
+		"image": "cow_teeth_paeonol_powder.png",
+		"description": "The supplementary ingredient of the Spectator potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"drop_of_tears": {
+		"name": "Drop of Tears",
+		"image": "drop_of_tears.png",
+		"description": "Drop of tears from different creatures that were shed due to intense emotion",
+		"effects": [
+			"insight"
+		]
+	},
+	"mind_dragons_completebrain_elderly": {
+		"name": "Mind Dragon's Complete\n\t\t\t\t\t\t\t\t\t\t\t\tBrain (Elderly)",
+		"image": "mind_dragons_completebrain_elderly.png",
+		"description": "The main ingredient of the Manipulator potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"mirror_dragons_eyes": {
+		"name": "Mirror Dragon's Eyes",
+		"image": "mirror_dragons_eyes.png",
+		"description": "The main ingredient of the Psychiatrist potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"mirror_dragons_blood": {
+		"name": "Mirror Dragon's Blood",
+		"image": "mirror_dragons_blood.png",
+		"description": "The supplementary ingredient of the Psychiatrist potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"dream_catchers_heart": {
+		"name": "Dream Catcher's Heart",
+		"image": "dream_catchers_heart.png",
+		"description": "The main ingredient of the Dreamwalker potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"tree_mentor_crystalline_heart": {
+		"name": "Tree Mentor Crystalline Heart",
+		"image": "tree_mentor_crystalline_heart.png",
+		"description": "The main ingredient of the Manipulator potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"mind_dragons_blood_elderly": {
+		"name": "Mind Dragon's Blood (Elderly)",
+		"image": "mind_dragons_blood_elderly.png",
+		"description": "The supplementary ingredient of the Manipulator potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"autumn_crocus_essence": {
+		"name": "Autumn Crocus Essence",
+		"image": "autumn_crocus_essence.png",
+		"description": "The supplementary ingredient of the Spectator potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"chestnut_spore": {
+		"name": "Chestnut Spore",
+		"image": "chestnut_spore.png",
+		"description": "The supplementary ingredient of the Telepathist potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"illusory_chime_trees_fruit": {
+		"name": "Illusory Chime Tree's Fruit",
+		"image": "illusory_chime_trees_fruit.png",
+		"description": "A fist-sized, colorless, translucent fruit of the Illusory Chime Tree.",
+		"effects": [
+			"insight"
+		]
+	},
+	"farsman_rabbits_spinal_fluid": {
+		"name": "Farsman Rabbit's Spinal Fluid",
+		"image": "farsman_rabbits_spinal_fluid.png",
+		"description": "The main ingredient of the Telepathist potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"elf_flower_petals": {
+		"name": "Elf Flower Petals",
+		"image": "elf_flower_petals.png",
+		"description": "The supplementary ingredient of the Spectator potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"matured_manhal_fishs_eyeball": {
+		"name": "Matured Manhal Fish's Eyeball",
+		"image": "matured_manhal_fishs_eyeball.png",
+		"description": "An eyeball of matured Manhal Fish.",
+		"effects": [
+			"insight"
+		]
+	},
+	"crystal_sunflower": {
+		"name": "Crystal Sunflower",
+		"image": "crystal_sunflower.png",
+		"description": "The main ingredient of the Bard potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"adult_flint_birds_tail_feather": {
+		"name": "Adult Flint Bird's Tail Feather",
+		"image": "adult_flint_birds_tail_feather.png",
+		"description": "The main ingredient of the Bard potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"july_wine_juice": {
+		"name": "July Wine Juice",
+		"image": "july_wine_juice.png",
+		"description": "The supplementary ingredient of the Bard potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"mirror_hedgehog_blood": {
+		"name": "Mirror Hedgehog Blood",
+		"image": "mirror_hedgehog_blood.png",
+		"description": "The main ingredient of the Light Supplicant potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"siren_rock": {
+		"name": "Siren Rock",
+		"image": "siren_rock.png",
+		"description": "The main ingredient of the Bard potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"dawn_roosters_blood": {
+		"name": "Dawn Rooster's Blood",
+		"image": "dawn_roosters_blood.png",
+		"description": "The supplementary ingredient of the Solar High Priest potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"powder_of_dazzling_soul": {
+		"name": "Powder of Dazzling Soul",
+		"image": "powder_of_dazzling_soul.png",
+		"description": "The main ingredient of the Light Supplicant potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"radiance_spirit_pact_treesjuice": {
+		"name": "Radiance Spirit Pact Tree's\n\t\t\t\t\t\t\t\t\t\t\t\tJuice",
+		"image": "radiance_spirit_pact_treesjuice.png",
+		"description": "The supplementary ingredient of the Notary potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"magma_heart_powder": {
+		"name": "Magma Heart Powder",
+		"image": "magma_heart_powder.png",
+		"description": "The supplementary ingredient of the Unshadowed potions.",
+		"effects": [
+			"stealth"
+		]
+	},
+	"spirit_pact_birds_feather": {
+		"name": "Spirit Pact Bird's Feather",
+		"image": "spirit_pact_birds_feather.png",
+		"description": "The main ingredient of the Notary potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"fingered_citron_powder": {
+		"name": "Fingered Citron Powder",
+		"image": "fingered_citron_powder.png",
+		"description": "The supplementary ingredient of the Solar High Priest potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"rosemary": {
+		"name": "Rosemary",
+		"image": "rosemary.png",
+		"description": "A shrub with fragrant, evergreen, needle-like leaves and white, pink, purple, or blue flowers.",
+		"effects": [
+			"insight"
+		]
+	},
+	"solidified_magma": {
+		"name": "Solidified Magma",
+		"image": "solidified_magma.png",
+		"description": "The supplementary ingredient of the Solar High Priest potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"pure_white_brilliant_rock": {
+		"name": "Pure White Brilliant Rock",
+		"image": "pure_white_brilliant_rock.png",
+		"description": "The main ingredient of the Priest of Light potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"radiance_spirit_pact_treesfruit": {
+		"name": "Radiance Spirit Pact Tree's\n\t\t\t\t\t\t\t\t\t\t\t\tFruit",
+		"image": "radiance_spirit_pact_treesfruit.png",
+		"description": "The main ingredient of the Solar High Priest potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"dawn_roosters_red_comb": {
+		"name": "Dawn Rooster's Red Comb",
+		"image": "dawn_roosters_red_comb.png",
+		"description": "The main ingredient of the Solar High Priest potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"red_wine": {
+		"name": "Red Wine",
+		"image": "red_wine.png",
+		"description": "The supplementary ingredient of the Briber, Hunter, Secrets Suppliant, Listener, Bard, Light Suppliant, Midnight Poet potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"holy_brilliance_rock_liquid": {
+		"name": "Holy Brilliance Rock Liquid",
+		"image": "holy_brilliance_rock_liquid.png",
+		"description": "The supplementary ingredient of the Unshadowed potions.",
+		"effects": [
+			"stealth"
+		]
+	},
+	"goldenrimmed_sunflower": {
+		"name": "Golden-Rimmed Sunflower",
+		"image": "goldenrimmed_sunflower.png",
+		"description": "The supplementary ingredient of the Light Supplicant potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"holy_brilliance_rock": {
+		"name": "Holy Brilliance Rock",
+		"image": "holy_brilliance_rock.png",
+		"description": "The main ingredient of the Unshadowed potions.",
+		"effects": [
+			"stealth"
+		]
+	},
+	"golden_blood_of_the_sun_god": {
+		"name": "Golden Blood of the Sun God",
+		"image": "golden_blood_of_the_sun_god.png",
+		"description": "The main ingredient of the Unshadowed potions.",
+		"effects": [
+			"stealth"
+		]
+	},
+	"tree_of_elders_crystalizedroots": {
+		"name": "Tree of Elder's Crystalized\n\t\t\t\t\t\t\t\t\t\t\t\tRoots",
+		"image": "tree_of_elders_crystalizedroots.png",
+		"description": "The main ingredient of the Notary potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"mutated_fingered_citron_juice": {
+		"name": "Mutated Fingered Citron Juice",
+		"image": "mutated_fingered_citron_juice.png",
+		"description": "The supplementary ingredient of the Unshadowed potions.",
+		"effects": [
+			"stealth"
+		]
+	},
+	"sun_divine_birds_blood": {
+		"name": "Sun Divine Bird's Blood",
+		"image": "sun_divine_birds_blood.png",
+		"description": "The supplementary ingredient of the Unshadowed potions.",
+		"effects": [
+			"stealth"
+		]
+	},
+	"sun_divine_birds_tail_feather": {
+		"name": "Sun Divine Bird's Tail Feather",
+		"image": "sun_divine_birds_tail_feather.png",
+		"description": "The main ingredient of the Unshadowed potions.",
+		"effects": [
+			"stealth"
+		]
+	},
+	"king_of_dawn_roosters_blood": {
+		"name": "King of Dawn Roosters' Blood",
+		"image": "king_of_dawn_roosters_blood.png",
+		"description": "The supplementary ingredient of the Priest of Light potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"rock_water": {
+		"name": "Rock Water",
+		"image": "rock_water.png",
+		"description": "The supplementary ingredient of the Priest of Light potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"fingered_citron_juice": {
+		"name": "Fingered Citron Juice",
+		"image": "fingered_citron_juice.png",
+		"description": "The supplementary ingredient of the Priest of Light potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"king_of_dawn_roosters_red_comb": {
+		"name": "King of Dawn Roosters' Red Comb",
+		"image": "king_of_dawn_roosters_red_comb.png",
+		"description": "The main ingredient of the Priest of Light potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"elf_dark_leaf": {
+		"name": "Elf Dark Leaf",
+		"image": "elf_dark_leaf.png",
+		"description": "The supplementary ingredient of the Light Supplicant potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"aconite_juice": {
+		"name": "Aconite Juice",
+		"image": "aconite_juice.png",
+		"description": "The supplementary ingredient of the Light Supplicant potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"sun_essential_oil": {
+		"name": "Sun Essential Oil",
+		"image": "sun_essential_oil.png",
+		"description": "Extracted from a combination of black-rimmed sunflower, golden-rimmed sunflower, and white-rimmed sunflower.",
+		"effects": [
+			"insight"
+		]
+	},
+	"brilliance_rock": {
+		"name": "Brilliance Rock",
+		"image": "brilliance_rock.png",
+		"description": "The main ingredient of the Light Supplicant potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"aqua_fern_juice": {
+		"name": "Aqua Fern Juice",
+		"image": "aqua_fern_juice.png",
+		"description": "The supplementary ingredient of the Notary potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"midsummer_grass": {
+		"name": "Midsummer Grass",
+		"image": "midsummer_grass.png",
+		"description": "The supplementary ingredient of the Bard potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"singing_sunflower": {
+		"name": "Singing Sunflower",
+		"image": "singing_sunflower.png",
+		"description": "The main ingredient of the Bard potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"whiterimmed_sunflower": {
+		"name": "White-Rimmed Sunflower",
+		"image": "whiterimmed_sunflower.png",
+		"description": "The supplementary ingredient of the Notary potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"heart_of_a_magma_titan": {
+		"name": "Heart of a Magma Titan",
+		"image": "heart_of_a_magma_titan.png",
+		"description": "The main ingredient of the Light Supplicant potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"fire_birds_tail_feather": {
+		"name": "Fire Bird's Tail Feather",
+		"image": "fire_birds_tail_feather.png",
+		"description": "The main ingredient of the Bard potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"blue_shadow_falconscrystalline_feathers": {
+		"name": "Blue Shadow Falcon's\n\t\t\t\t\t\t\t\t\t\t\t\tCrystalline Feathers",
+		"image": "blue_shadow_falconscrystalline_feathers.png",
+		"description": "A crystalline feather of Blue Shadow Falcon.",
+		"effects": [
+			"stealth"
+		]
+	},
+	"murlocs_bladder": {
+		"name": "Murloc's Bladder",
+		"image": "murlocs_bladder.png",
+		"description": "A bladder from a Murloc, with an interior lined in black velvet. At its center lies a round, transparent object that resembles a gem.",
+		"effects": [
+			"insight"
+		]
+	},
+	"dragoneyed_sea_condorseyeballs": {
+		"name": "Dragon-Eyed Sea Condor's\n\t\t\t\t\t\t\t\t\t\t\t\tEyeballs",
+		"image": "dragoneyed_sea_condorseyeballs.png",
+		"description": "description",
+		"effects": [
+			"insight"
+		]
+	},
+	"desiccated_matureblackspotted_frog": {
+		"name": "Desiccated mature\n\t\t\t\t\t\t\t\t\t\t\t\tBlack-spotted Frog",
+		"image": "desiccated_matureblackspotted_frog.png",
+		"description": "The main ingredient of the Corpse Collector potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"stone_golems_core": {
+		"name": "Stone Golem's Core",
+		"image": "stone_golems_core.png",
+		"description": "A core of a Stone Golem.",
+		"effects": [
+			"physical_boost"
+		]
+	},
+	"demon_throat_honeyguidessyrinx": {
+		"name": "Demon Throat Honeyguide's\n\t\t\t\t\t\t\t\t\t\t\t\tSyrinx",
+		"image": "demon_throat_honeyguidessyrinx.png",
+		"description": "The main ingredient of the Instigator potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"500yearold_antique_mirror": {
+		"name": "500-year-old Antique Mirror",
+		"image": "500yearold_antique_mirror.png",
+		"description": "An antique mirror over 500 years old with a corresponding mirror realm.",
+		"effects": [
+			"insight"
+		]
+	},
+	"seriously_ill_humans_blood": {
+		"name": "Seriously Ill Human's Blood",
+		"image": "seriously_ill_humans_blood.png",
+		"description": "The supplementary ingredient of the Affliction potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"blue_jimsonweed_juice": {
+		"name": "Blue Jimsonweed Juice",
+		"image": "blue_jimsonweed_juice.png",
+		"description": "The supplementary ingredient of the Instigator potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"succubuss_hair_completeremnants": {
+		"name": "Succubus's Hair Complete\n\t\t\t\t\t\t\t\t\t\t\t\tRemnants",
+		"image": "succubuss_hair_completeremnants.png",
+		"description": "The supplementary ingredient of the Pleasure potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"feynapotter_fly_powder": {
+		"name": "Feynapotter Fly Powder",
+		"image": "feynapotter_fly_powder.png",
+		"description": "The supplementary ingredient of the Pleasure potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"black_widow_spider_silk_gland": {
+		"name": "Black Widow Spider Silk Gland",
+		"image": "black_widow_spider_silk_gland.png",
+		"description": "The main ingredient of the Pleasure potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"twotailed_black_snakesgallbladder": {
+		"name": "Two-Tailed Black Snake's\n\t\t\t\t\t\t\t\t\t\t\t\tGallbladder",
+		"image": "twotailed_black_snakesgallbladder.png",
+		"description": "The main ingredient of the Affliction potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"gorgon_eyes": {
+		"name": "Gorgon Eyes",
+		"image": "gorgon_eyes.png",
+		"description": "The main ingredient of the Unaging potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"daffodil_juice": {
+		"name": "Daffodil Juice",
+		"image": "daffodil_juice.png",
+		"description": "The supplementary ingredient of the Witch potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"plague_mother_serpents_bile": {
+		"name": "Plague Mother Serpent's Bile",
+		"image": "plague_mother_serpents_bile.png",
+		"description": "The supplementary ingredient of the Despair potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"drops_of_waterfrom_a_drowned_persons_lungs": {
+		"name": "Drops of water\n\t\t\t\t\t\t\t\t\t\t\t\tfrom a drowned person's lungs",
+		"image": "drops_of_waterfrom_a_drowned_persons_lungs.png",
+		"description": "The main ingredient of the Unaging potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"gorgon_blood": {
+		"name": "Gorgon Blood",
+		"image": "gorgon_blood.png",
+		"description": "The supplementary ingredient of the Unaging potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"mummy_ashes": {
+		"name": "Mummy Ashes",
+		"image": "mummy_ashes.png",
+		"description": "A mystical aphrodisiac ingredient widely consumed by aristocrats, often added to tea or boiled as soup.",
+		"effects": [
+			"insight"
+		]
+	},
+	"succubus_eyes": {
+		"name": "Succubus Eyes",
+		"image": "succubus_eyes.png",
+		"description": "The main ingredient of the Pleasure potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"victims_blood": {
+		"name": "Victim's Blood",
+		"image": "victims_blood.png",
+		"description": "Blood from seven victims who died from different plagues",
+		"effects": [
+			"insight"
+		]
+	},
+	"mistletoes_fresh_branch": {
+		"name": "Mistletoe's Fresh Branch",
+		"image": "mistletoes_fresh_branch.png",
+		"description": "The supplementary ingredient of the Despair potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"fragments_of_the_silver_hunter": {
+		"name": "Fragments of the Silver Hunter",
+		"image": "fragments_of_the_silver_hunter.png",
+		"description": "The supplementary ingredient of the Despair potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"silver_hunters_crystal": {
+		"name": "Silver Hunter's Crystal",
+		"image": "silver_hunters_crystal.png",
+		"description": "The main ingredient of the Despair potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"plague_mother_serpents_venomsac": {
+		"name": "Plague Mother Serpent's Venom\n\t\t\t\t\t\t\t\t\t\t\t\tSac",
+		"image": "plague_mother_serpents_venomsac.png",
+		"description": "The main ingredient of the Despair potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"enfinitas_eucalyptus_essentialoil": {
+		"name": "Enfinitas Eucalyptus Essential\n\t\t\t\t\t\t\t\t\t\t\t\tOil",
+		"image": "enfinitas_eucalyptus_essentialoil.png",
+		"description": "The supplementary ingredient of the Affliction potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"twotailed_black_snakes_tailtip": {
+		"name": "Two-Tailed Black Snake's Tail\n\t\t\t\t\t\t\t\t\t\t\t\tTip",
+		"image": "twotailed_black_snakes_tailtip.png",
+		"description": "The supplementary ingredient of the Affliction potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"flowerfaced_bat_blood": {
+		"name": "Flower-Faced Bat Blood",
+		"image": "flowerfaced_bat_blood.png",
+		"description": "The supplementary ingredient of the Affliction potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"flowerfaced_bat_head": {
+		"name": "Flower-Faced Bat Head",
+		"image": "flowerfaced_bat_head.png",
+		"description": "The main ingredient of the Affliction potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"mirror_god_fragments": {
+		"name": "Mirror God Fragments",
+		"image": "mirror_god_fragments.png",
+		"description": "The supplementary ingredient of the Unaging potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"heart_of_a_mirror_god": {
+		"name": "Heart of a Mirror God",
+		"image": "heart_of_a_mirror_god.png",
+		"description": "The main ingredient of the Unaging potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"shadow_lizards_scales": {
+		"name": "Shadow Lizard's Scales",
+		"image": "shadow_lizards_scales.png",
+		"description": "The supplementary ingredient of the Witch potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"agate_peacock_egg": {
+		"name": "Agate Peacock Egg",
+		"image": "agate_peacock_egg.png",
+		"description": "The main ingredient of the Witch potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"demon_throat_honeyguides_heart": {
+		"name": "Demon Throat Honeyguide's Heart",
+		"image": "demon_throat_honeyguides_heart.png",
+		"description": "The main ingredient of the Instigator potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"dark_prowlers_poison_sac": {
+		"name": "Dark Prowler's Poison Sac",
+		"image": "dark_prowlers_poison_sac.png",
+		"description": "The main ingredient of the Instigator potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"aqua_fern_grass_powder": {
+		"name": "Aqua Fern Grass Powder",
+		"image": "aqua_fern_grass_powder.png",
+		"description": "The supplementary ingredient of the Instigator, Provoker potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"abyss_demonic_fish_blood": {
+		"name": "Abyss Demonic Fish Blood",
+		"image": "abyss_demonic_fish_blood.png",
+		"description": "The main ingredient of the Witch potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"red_chestnut_flower": {
+		"name": "Red Chestnut Flower",
+		"image": "red_chestnut_flower.png",
+		"description": "The supplementary ingredient of the Trickmaster, Hunter potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"honeysuckle_extract": {
+		"name": "Honeysuckle Extract",
+		"image": "honeysuckle_extract.png",
+		"description": "The supplementary ingredient of the Provoker potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"distilled_liquor": {
+		"name": "Distilled Liquor",
+		"image": "distilled_liquor.png",
+		"description": "The supplementary ingredient of the Provoker potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"white_oak_fruits": {
+		"name": "White Oak Fruits",
+		"image": "white_oak_fruits.png",
+		"description": "The supplementary ingredient of the Conspirer potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"basil": {
+		"name": "Basil",
+		"image": "basil.png",
+		"description": "The supplementary ingredient of the Hunter potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"gray_demonic_wolfs_front_claws": {
+		"name": "Gray Demonic Wolf's Front Claws",
+		"image": "gray_demonic_wolfs_front_claws.png",
+		"description": "The main ingredient of the Reaper potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"grapevine_powder": {
+		"name": "Grapevine Powder",
+		"image": "grapevine_powder.png",
+		"description": "The supplementary ingredient of the Provoker potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"forest_hunters_fang": {
+		"name": "Forest Hunter's Fang",
+		"image": "forest_hunters_fang.png",
+		"description": "The supplementary ingredient of the Reaper potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"forest_hunters_tongue": {
+		"name": "Forest Hunter's Tongue",
+		"image": "forest_hunters_tongue.png",
+		"description": "The main ingredient of the Reaper potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"amber_powder": {
+		"name": "Amber Powder",
+		"image": "amber_powder.png",
+		"description": "The supplementary ingredient of the Conspirer potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"sun_star_extract": {
+		"name": "Sun Star extract",
+		"image": "sun_star_extract.png",
+		"description": "The supplementary ingredient of the Pyromaniac potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"black_hunting_spiderspoison_gland": {
+		"name": "Black Hunting Spider's\n\t\t\t\t\t\t\t\t\t\t\t\tPoison Gland",
+		"image": "black_hunting_spiderspoison_gland.png",
+		"description": "The supplementary ingredient of the Conspirer potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"sphinx_brain": {
+		"name": "Sphinx Brain",
+		"image": "sphinx_brain.png",
+		"description": "The main ingredient of the Conspirer potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"black_hunting_spider_compositeeyes": {
+		"name": "Black Hunting Spider Composite\n\t\t\t\t\t\t\t\t\t\t\t\tEyes",
+		"image": "black_hunting_spider_compositeeyes.png",
+		"description": "Eyes of Black Hunting Spider",
+		"effects": [
+			"insight"
+		]
+	},
+	"sphinx_blood": {
+		"name": "Sphinx Blood",
+		"image": "sphinx_blood.png",
+		"description": "The supplementary ingredient of the Conspirer potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"redcrown_balsam_powder": {
+		"name": "Redcrown Balsam Powder",
+		"image": "redcrown_balsam_powder.png",
+		"description": "The supplementary ingredient of the Pyromaniac potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"fire_salamander_blood": {
+		"name": "Fire Salamander blood",
+		"image": "fire_salamander_blood.png",
+		"description": "The supplementary ingredient of the Pyromaniac potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"fire_salamander_gland": {
+		"name": "Fire Salamander Gland",
+		"image": "fire_salamander_gland.png",
+		"description": "The main ingredient of the Pyromaniac potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"poplar_tree_leaf_powder": {
+		"name": "Poplar Tree Leaf Powder",
+		"image": "poplar_tree_leaf_powder.png",
+		"description": "The supplementary ingredient of the Hunter potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"magma_pyroxene_powder": {
+		"name": "Magma Pyroxene Powder",
+		"image": "magma_pyroxene_powder.png",
+		"description": "The supplementary ingredient of the Pyromaniac potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"colorful_bearded_horned_lizardvenom": {
+		"name": "Colorful Bearded Horned Lizard\n\t\t\t\t\t\t\t\t\t\t\t\tVenom",
+		"image": "colorful_bearded_horned_lizardvenom.png",
+		"description": "The supplementary ingredient of the Reaper potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"gray_demonic_wolfs_blood": {
+		"name": "Gray Demonic Wolf's blood",
+		"image": "gray_demonic_wolfs_blood.png",
+		"description": "The supplementary ingredient of the Reaper potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"royal_jellyfishs_venom_crystal": {
+		"name": "Royal Jellyfish's Venom Crystal",
+		"image": "royal_jellyfishs_venom_crystal.png",
+		"description": "The main ingredient of the Apothecary potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"spring_of_the_elves_marrowcrystal": {
+		"name": "Spring of the Elves Marrow\n\t\t\t\t\t\t\t\t\t\t\t\tCrystal",
+		"image": "spring_of_the_elves_marrowcrystal.png",
+		"description": "Resembling a faded egg, these crystals feature thin shells that appear fragile and prone to shattering at the slightest touch. Despite their delicate appearance, they contain swishing water inside, even without agitation.",
+		"effects": [
+			"transformation"
+		]
+	},
+	"flying_unicorns_horn": {
+		"name": "Flying Unicorn's Horn",
+		"image": "flying_unicorns_horn.png",
+		"description": "The main ingredient of the Apothecary potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"soaking_poplar_bark_extracted": {
+		"name": "Soaking Poplar Bark Extracted",
+		"image": "soaking_poplar_bark_extracted.png",
+		"description": "The supplementary ingredient of the Barbarian potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"strangefaced_cannabis_crystal": {
+		"name": "Strange-faced Cannabis Crystal",
+		"image": "strangefaced_cannabis_crystal.png",
+		"description": "The main ingredient of the Briber potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"golden_jimsonweed_juice": {
+		"name": "Golden Jimsonweed Juice",
+		"image": "golden_jimsonweed_juice.png",
+		"description": "The supplementary ingredient of the Barbarian potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"weeping_infant_flower": {
+		"name": "Weeping Infant Flower",
+		"image": "weeping_infant_flower.png",
+		"description": "The main ingredient of the Briber potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"liquor": {
+		"name": "Liquor",
+		"image": "liquor.png",
+		"description": "The supplementary ingredient of the Barbarian potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"fragrance_hornet_grass": {
+		"name": "Fragrance Hornet Grass",
+		"image": "fragrance_hornet_grass.png",
+		"description": "The supplementary ingredient of the Barbarian potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"deepgrained_walnut": {
+		"name": "Deep-Grained Walnut",
+		"image": "deepgrained_walnut.png",
+		"description": "The supplementary ingredient of the Barbarian potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"land_rhinoceros_core_horn_crystal": {
+		"name": "Land Rhinoceros Core Horn Crystal",
+		"image": "land_rhinoceros_core_horn_crystal.png",
+		"description": "The main ingredient of the Barbarian potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"grass_of_madness": {
+		"name": "Grass of Madness",
+		"image": "grass_of_madness.png",
+		"description": "The main ingredient of the Barbarian potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"dust_of_a_lake_spirit": {
+		"name": "Dust of a Lake Spirit",
+		"image": "dust_of_a_lake_spirit.png",
+		"description": "The main ingredient of the Interrogator potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"flashpatterned_blacksnakes_horn": {
+		"name": "Flash-patterned Black\n\t\t\t\t\t\t\t\t\t\t\t\tSnake's Horn",
+		"image": "flashpatterned_blacksnakes_horn.png",
+		"description": "The main ingredient of the Interrogator potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"silver_war_bears_right_palm": {
+		"name": "Silver War Bear's Right Palm",
+		"image": "silver_war_bears_right_palm.png",
+		"description": "The main ingredient of the Sheriff potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"terror_demon_worms_eyes": {
+		"name": "Terror Demon Worm's Eyes",
+		"image": "terror_demon_worms_eyes.png",
+		"description": "The main ingredient of the Sheriff potions.",
+		"effects": [
+			"insight"
+		]
+	},
+	"demon_throat_honeyguides_syrinx": {
+		"name": "Demon Throat Honeyguide's Syrinx",
+		"image": "demon_throat_honeyguides_syrinx.png",
+		"description": "A mystical ingredient from the Demon Throat Honeyguide's Syrinx.",
+		"effects": [
+			"insight"
+		]
+	},
+	"rainbow_salamander_complete_pituitary_gland": {
+		"name": "Rainbow Salamander Complete Pituitary Gland",
+		"image": "rainbow_salamander_complete_pituitary_gland.png",
+		"description": "A mystical ingredient from the Rainbow Salamander Complete Pituitary Gland.",
+		"effects": [
+			"insight"
+		]
+	},
+	"mind_dragons_complete_pituitary_gland": {
+		"name": "Mind Dragon's Complete Pituitary Gland",
+		"image": "mind_dragons_complete_pituitary_gland.png",
+		"description": "A mystical ingredient from the Mind Dragon's Complete Pituitary Gland.",
+		"effects": [
+			"insight"
+		]
+	},
+	"blackhunting_giant_lizards_spinal_fluid": {
+		"name": "Black-Hunting Giant Lizard's Spinal Fluid",
+		"image": "blackhunting_giant_lizards_spinal_fluid.png",
+		"description": "A mystical ingredient from the Black-Hunting Giant Lizard's Spinal Fluid.",
+		"effects": [
+			"insight"
+		]
+	},
+	"blue_shadow_falcons_crystalline_feathers": {
+		"name": "Blue Shadow Falcon's Crystalline Feathers",
+		"image": "blue_shadow_falcons_crystalline_feathers.png",
+		"description": "A mystical ingredient from the Blue Shadow Falcon's Crystalline Feathers.",
+		"effects": [
+			"insight"
+		]
+	},
+	"succubuss_hair_complete_remnants": {
+		"name": "Succubus's Hair Complete Remnants",
+		"image": "succubuss_hair_complete_remnants.png",
+		"description": "A mystical ingredient from the Succubus's Hair Complete Remnants.",
+		"effects": [
+			"insight"
+		]
+	},
+	"remnant_spirituality_of_ancient_wraiths": {
+		"name": "Remnant Spirituality of Ancient Wraiths",
+		"image": "remnant_spirituality_of_ancient_wraiths.png",
+		"description": "A mystical ingredient from the Remnant Spirituality of Ancient Wraiths.",
+		"effects": [
+			"insight"
+		]
+	},
+	"desiccated_mature_blackspotted_frog": {
+		"name": "Desiccated mature Black-spotted Frog",
+		"image": "desiccated_mature_blackspotted_frog.png",
+		"description": "A mystical ingredient from the Desiccated mature Black-spotted Frog.",
+		"effects": [
+			"insight"
+		]
+	},
+	"mutated_pituitary_gland_of_a_thousandfaced_hunter": {
+		"name": "Mutated pituitary gland of a Thousand-faced Hunter",
+		"image": "mutated_pituitary_gland_of_a_thousandfaced_hunter.png",
+		"description": "A mystical ingredient from the Mutated pituitary gland of a Thousand-faced Hunter.",
+		"effects": [
+			"insight"
+		]
+	},
+	"radiance_spirit_pact_trees_juice": {
+		"name": "Radiance Spirit Pact Tree's Juice",
+		"image": "radiance_spirit_pact_trees_juice.png",
+		"description": "A mystical ingredient from the Radiance Spirit Pact Tree's Juice.",
+		"effects": [
+			"insight"
+		]
+	},
+	"white_frost_crystal_of_demonic_wolf_of_fog": {
+		"name": "White Frost Crystal of Demonic Wolf of Fog",
+		"image": "white_frost_crystal_of_demonic_wolf_of_fog.png",
+		"description": "A mystical ingredient from the White Frost Crystal of Demonic Wolf of Fog.",
+		"effects": [
+			"insight"
+		]
+	},
+	"hound_of_fulgrims_blood": {
+		"name": "Hound of Fulgrim's Blood",
+		"image": "hound_of_fulgrims_blood.png",
+		"description": "A mystical ingredient from the Hound of Fulgrim's Blood.",
+		"effects": [
+			"insight"
+		]
+	},
+	"twotailed_black_snakes_gallbladder": {
+		"name": "Two-Tailed Black Snake's Gallbladder",
+		"image": "twotailed_black_snakes_gallbladder.png",
+		"description": "A mystical ingredient from the Two-Tailed Black Snake's Gallbladder.",
+		"effects": [
+			"insight"
+		]
+	},
+	"fingernailsized_selfmade_rubber_mask": {
+		"name": "Fingernail-Sized Self-made Rubber Mask",
+		"image": "fingernailsized_selfmade_rubber_mask.png",
+		"description": "A mystical ingredient from the Fingernail-Sized Self-made Rubber Mask.",
+		"effects": [
+			"insight"
+		]
+	},
+	"cursed_artifacts_of_an_ancient_wraith": {
+		"name": "Cursed artifacts of an ancient wraith",
+		"image": "cursed_artifacts_of_an_ancient_wraith.png",
+		"description": "A mystical ingredient from the Cursed artifacts of an ancient wraith.",
+		"effects": [
+			"insight"
+		]
+	},
+	"lavos_squids_crystallized_blood": {
+		"name": "Lavos Squid's Crystallized Blood",
+		"image": "lavos_squids_crystallized_blood.png",
+		"description": "A mystical ingredient from the Lavos Squid's Crystallized Blood.",
+		"effects": [
+			"insight"
+		]
+	},
+	"adult_mind_dragons_complete_brain": {
+		"name": "Adult Mind Dragon's Complete Brain",
+		"image": "adult_mind_dragons_complete_brain.png",
+		"description": "A mystical ingredient from the Adult Mind Dragon's Complete Brain.",
+		"effects": [
+			"insight"
+		]
+	},
+	"black_hunting_spiders_poison_gland": {
+		"name": "Black Hunting Spider's Poison Gland",
+		"image": "black_hunting_spiders_poison_gland.png",
+		"description": "A mystical ingredient from the Black Hunting Spider's Poison Gland.",
+		"effects": [
+			"insight"
+		]
+	},
+	"adult_mind_dragons_blood": {
+		"name": "Adult Mind Dragon's Blood",
+		"image": "adult_mind_dragons_blood.png",
+		"description": "A mystical ingredient from the Adult Mind Dragon's Blood.",
+		"effects": [
+			"insight"
+		]
+	},
+	"humanskined_shadows_characteristic": {
+		"name": "Human-Skined Shadow's Characteristic",
+		"image": "humanskined_shadows_characteristic.png",
+		"description": "A mystical ingredient from the Human-Skined Shadow's Characteristic.",
+		"effects": [
+			"insight"
+		]
+	},
+	"black_hunting_spider_composite_eyes": {
+		"name": "Black Hunting Spider Composite Eyes",
+		"image": "black_hunting_spider_composite_eyes.png",
+		"description": "A mystical ingredient from the Black Hunting Spider Composite Eyes.",
+		"effects": [
+			"insight"
+		]
+	},
+	"radiance_spirit_pact_trees_fruit": {
+		"name": "Radiance Spirit Pact Tree's Fruit",
+		"image": "radiance_spirit_pact_trees_fruit.png",
+		"description": "A mystical ingredient from the Radiance Spirit Pact Tree's Fruit.",
+		"effects": [
+			"insight"
+		]
+	},
+	"tears": {
+		"name": "Tears",
+		"image": "tears.png",
+		"description": "A mystical ingredient from the Tears.",
+		"effects": [
+			"insight"
+		]
+	},
+	"elderly_mind_dragons_complete_brain": {
+		"name": "Elderly Mind Dragon's Complete Brain",
+		"image": "elderly_mind_dragons_complete_brain.png",
+		"description": "A mystical ingredient from the Elderly Mind Dragon's Complete Brain.",
+		"effects": [
+			"insight"
+		]
+	},
+	"dark_patterned_black_panther_spinal_fluid": {
+		"name": "Dark Patterned Black Panther Spinal Fluid",
+		"image": "dark_patterned_black_panther_spinal_fluid.png",
+		"description": "A mystical ingredient from the Dark Patterned Black Panther Spinal Fluid.",
+		"effects": [
+			"insight"
+		]
+	},
+	"flashpatterned_black_snakes_horn": {
+		"name": "Flash-patterned Black Snake's Horn",
+		"image": "flashpatterned_black_snakes_horn.png",
+		"description": "A mystical ingredient from the Flash-patterned Black Snake's Horn.",
+		"effects": [
+			"insight"
+		]
+	},
+	"spring_of_the_elves_marrow_crystals": {
+		"name": "Spring of the Elves Marrow Crystals",
+		"image": "spring_of_the_elves_marrow_crystals.png",
+		"description": "A mystical ingredient from the Spring of the Elves Marrow Crystals.",
+		"effects": [
+			"insight"
+		]
+	},
+	"drops_of_water_from_a_drowned_persons_lungs": {
+		"name": "drops of water from a drowned person's lungs",
+		"image": "drops_of_water_from_a_drowned_persons_lungs.png",
+		"description": "A mystical ingredient from the drops of water from a drowned person's lungs.",
+		"effects": [
+			"insight"
+		]
+	},
+	"hound_of_fulgrims_eyes": {
+		"name": "Hound of Fulgrim's Eyes",
+		"image": "hound_of_fulgrims_eyes.png",
+		"description": "A mystical ingredient from the Hound of Fulgrim's Eyes.",
+		"effects": [
+			"insight"
+		]
+	},
+	"demonic_wolf_of_fogs_transformed_heart": {
+		"name": "Demonic Wolf of Fog's Transformed Heart",
+		"image": "demonic_wolf_of_fogs_transformed_heart.png",
+		"description": "A mystical ingredient from the Demonic Wolf of Fog's Transformed Heart.",
+		"effects": [
+			"insight"
+		]
+	},
+	"plague_mother_serpents_venom_sac": {
+		"name": "Plague Mother Serpent's Venom Sac",
+		"image": "plague_mother_serpents_venom_sac.png",
+		"description": "A mystical ingredient from the Plague Mother Serpent's Venom Sac.",
+		"effects": [
+			"insight"
+		]
+	},
+	"enfinitas_eucalyptus_essential_oil": {
+		"name": "Enfinitas Eucalyptus Essential Oil",
+		"image": "enfinitas_eucalyptus_essential_oil.png",
+		"description": "A mystical ingredient from the Enfinitas Eucalyptus Essential Oil.",
+		"effects": [
+			"insight"
+		]
+	},
+	"twotailed_black_snakes_tail_tip": {
+		"name": "Two-Tailed Black Snake's Tail Tip",
+		"image": "twotailed_black_snakes_tail_tip.png",
+		"description": "A mystical ingredient from the Two-Tailed Black Snake's Tail Tip.",
+		"effects": [
+			"insight"
+		]
+	},
+	"colorful_bearded_horned_lizard_venom": {
+		"name": "Colorful Bearded Horned Lizard Venom",
+		"image": "colorful_bearded_horned_lizard_venom.png",
+		"description": "A mystical ingredient from the Colorful Bearded Horned Lizard Venom.",
+		"effects": [
+			"insight"
+		]
+	},
+	"elderly_mind_dragons_blood": {
+		"name": "Elderly Mind Dragon's Blood",
+		"image": "elderly_mind_dragons_blood.png",
+		"description": "A mystical ingredient from the Elderly Mind Dragon's Blood.",
+		"effects": [
+			"insight"
+		]
+	},
+	"tree_of_elders_crystalized_roots": {
+		"name": "Tree of Elder's Crystalized Roots",
+		"image": "tree_of_elders_crystalized_roots.png",
+		"description": "A mystical ingredient from the Tree of Elder's Crystalized Roots.",
+		"effects": [
+			"insight"
+		]
+	},
+	"dragoneyed_sea_condors_eyeballs": {
+		"name": "Dragon-Eyed Sea Condor's Eyeballs",
+		"image": "dragoneyed_sea_condors_eyeballs.png",
+		"description": "A mystical ingredient from the Dragon-Eyed Sea Condor's Eyeballs.",
+		"effects": [
+			"insight"
+		]
+	},
+	"sixwinged_gargoyles_core_crystal": {
+		"name": "Six-Winged Gargoyle's Core Crystal",
+		"image": "sixwinged_gargoyles_core_crystal.png",
+		"description": "A mystical ingredient from the Six-Winged Gargoyle's Core Crystal.",
+		"effects": [
+			"insight"
+		]
+	}
 }
